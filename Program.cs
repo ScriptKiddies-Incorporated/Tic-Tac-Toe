@@ -48,7 +48,7 @@ namespace Tic_Tac_Toe
                                                         botChoice = r2.Next(7, 9);
                                                         if (botChoice == 8)
                                                         {
-                                                            goto B;//player wins
+                                                            goto B; //player wins
                                                         }
                                                     }
                                                     break;
@@ -65,7 +65,7 @@ namespace Tic_Tac_Toe
                                                             {
                                                                 botChoice = 7;
                                                             }
-                                                            break;//draw
+                                                            break; //draw
                                                         case 8:
                                                             if (eight == "X")
                                                             {
@@ -74,14 +74,14 @@ namespace Tic_Tac_Toe
                                                                 botChoice = r3.Next(5, 7);
                                                                 if (botChoice == 6)
                                                                 {
-                                                                    goto C;//draw
+                                                                    goto C; //draw
                                                                 }
                                                             }
                                                             break;
                                                         case 7:
                                                             if (seven == "X")
                                                             {
-                                                                botChoice = 5;//draw
+                                                                botChoice = 5; //draw
                                                             }
                                                             break;
                                                     }
@@ -96,20 +96,20 @@ namespace Tic_Tac_Toe
                                                         case 9:
                                                             if (nine == "X")
                                                             {
-                                                                botChoice = 6;//bot wins
+                                                                botChoice = 6; //bot wins
 
                                                             }
                                                             break;
                                                         case 6:
                                                             if (six == "X")
                                                             {
-                                                                botChoice = 9;//draw
+                                                                botChoice = 9; //draw
                                                             }
                                                             break;
                                                         case 8:
                                                             if (eight == "X")
                                                             {
-                                                                botChoice = 9;//draw
+                                                                botChoice = 9; //draw
                                                             }
                                                             break;
                                                     }
@@ -126,13 +126,13 @@ namespace Tic_Tac_Toe
                                                                 case 6:
                                                                     if (six == "X")
                                                                     {
-                                                                        botChoice = 9;//draw
+                                                                        botChoice = 9; //draw
                                                                     }
                                                                     break;
                                                                 case 9:
                                                                     if (nine == "X")
                                                                     {
-                                                                        botChoice = 6;//bot wins
+                                                                        botChoice = 6; //bot wins
                                                                     }
                                                                     break;
                                                                 case 7:
@@ -155,20 +155,20 @@ namespace Tic_Tac_Toe
                                                                         botChoice = r6.Next(7, 9);
                                                                         if (botChoice == 8)
                                                                         {
-                                                                            goto case 5;//draw
+                                                                            goto case 5; //draw
                                                                         }
                                                                     }
                                                                     break;
                                                                 case 9:
                                                                     if (nine == "X")
                                                                     {
-                                                                        botChoice = 5;//bot wins
+                                                                        botChoice = 5; //bot wins
                                                                     }
                                                                     break;
                                                                 case 7:
                                                                     if (seven == "X")
                                                                     {
-                                                                        botChoice = 5;//bot wins
+                                                                        botChoice = 5; //bot wins
                                                                     }
                                                                     break;
                                                             }
@@ -181,7 +181,7 @@ namespace Tic_Tac_Toe
                                                     if (nine == "X")
                                                     {
                                                         Random r7 = new Random();
-                                                        botChoice = r7.Next(5, 6);//player wins
+                                                        botChoice = r7.Next(5, 6); //player wins
 
                                                     }
                                                     break;
@@ -207,13 +207,13 @@ namespace Tic_Tac_Toe
                                                                 case 9:
                                                                     if (nine == "X")
                                                                     {
-                                                                        botChoice = 6;//draw
+                                                                        botChoice = 6; //draw
                                                                     }
                                                                     break;
                                                                 case 6:
                                                                     if (six == "X")
                                                                     {
-                                                                        botChoice = 9;//draw
+                                                                        botChoice = 9; //draw
                                                                     }
                                                                     break;
                                                             }
@@ -224,7 +224,7 @@ namespace Tic_Tac_Toe
                                                                     case 7:
                                                                         if (seven == "X")
                                                                         {
-                                                                            botChoice = 4;//draw
+                                                                            botChoice = 4; //draw
                                                                         }
                                                                         break;
                                                                     case 4:
@@ -251,7 +251,7 @@ namespace Tic_Tac_Toe
                                                         botChoice = r8.Next(7, 9);
                                                         if (botChoice == 8)
                                                         {
-                                                            goto case 5;//player wins
+                                                            goto case 5; //player wins
                                                         }
                                                     }
                                                     break;
@@ -266,13 +266,13 @@ namespace Tic_Tac_Toe
                                                             if (five == "X")
                                                             {
                                                                 Random r9 = new Random();
-                                                                botChoice = r9.Next(8, 9);//draw 
+                                                                botChoice = r9.Next(8, 9); //draw 
                                                             }
                                                             break;
                                                         case 8:
                                                             if (eight == "X")
                                                             {
-                                                                botChoice = 5;//draw
+                                                                botChoice = 5; //draw
                                                             }
                                                             break;
                                                         case 9:
@@ -287,7 +287,7 @@ namespace Tic_Tac_Toe
                                                     if (seven == "X")
                                                     {
                                                         Random r10 = new Random();
-                                                        botChoice = r10.Next(4, 5);//player wins
+                                                        botChoice = r10.Next(4, 5); //player wins
                                                     }
                                                     break;
                                                 case 8:
@@ -308,7 +308,7 @@ namespace Tic_Tac_Toe
                                                                 }
                                                                 if (botChoice == 8)
                                                                 {
-                                                                    goto case 5;//draw
+                                                                    goto case 5; //draw
                                                                 }
                                                                 break;
 
@@ -320,7 +320,7 @@ namespace Tic_Tac_Toe
                                                                 case 4:
                                                                     if (four == "X")
                                                                     {
-                                                                        botChoice = 7;//draw
+                                                                        botChoice = 7; //draw
                                                                     }
                                                                     break;
                                                                 case 7:
@@ -331,7 +331,7 @@ namespace Tic_Tac_Toe
                                                                     }
                                                                     if (botChoice == 5 || botChoice == 6 || botChoice == 7 || botChoice == 8)
                                                                     {
-                                                                        goto case 7;//player wins 
+                                                                        goto case 7; //player wins 
                                                                     }
                                                                     break;
                                                                 case 9:
@@ -342,7 +342,7 @@ namespace Tic_Tac_Toe
                                                                     }
                                                                     if (botChoice == 5 || botChoice == 6)
                                                                     {
-                                                                        goto case 9;//draw
+                                                                        goto case 9; //draw
                                                                     }
                                                                     break;
                                                             }
@@ -359,13 +359,13 @@ namespace Tic_Tac_Toe
                                                         case 4:
                                                             if (four == "X")
                                                             {
-                                                                botChoice = 7;//draw
+                                                                botChoice = 7; //draw
                                                             }
                                                             break;
                                                         case 8:
                                                             if (eight == "X")
                                                             {
-                                                                botChoice = 7;//draw
+                                                                botChoice = 7; //draw
                                                             }
                                                             break;
                                                         case 7:
@@ -376,7 +376,7 @@ namespace Tic_Tac_Toe
                                                             }
                                                             if (botChoice == 5 || botChoice == 6 || botChoice == 7)
                                                             {
-                                                                goto case 7;//player wins
+                                                                goto case 7; //player wins
                                                             }
                                                             break;
                                                     }
@@ -409,13 +409,13 @@ namespace Tic_Tac_Toe
                                                     case 6:
                                                         if (six=="X")
                                                         {
-                                                            botChoice = 8;//bot wins
+                                                            botChoice = 8; //bot wins
                                                         }
                                                         break;
                                                     case 9:
                                                         if (nine=="X")
                                                         {
-                                                            botChoice = 8;//bot wins
+                                                            botChoice = 8; //bot wins
                                                         }
                                                         break;
                                                     case 8:
@@ -566,10 +566,10 @@ namespace Tic_Tac_Toe
         static int userChoice;
         static int botChoice;
         static int counter;
-	    static int userChoice1;//additions for the BotAlgo()
-	    static int userChoice2;
-	    static int userChoice3;
-	    static int userChoice4;
+        static int userChoice1;//additions for the BotAlgo()
+        static int userChoice2;
+        static int userChoice3;
+        static int userChoice4;
       //  static int vs;
 
 
@@ -581,7 +581,7 @@ namespace Tic_Tac_Toe
             while (true)
             {
                 s.Play();
-                Thread.Sleep(179000);
+                Thread.Sleep(164000);
             }
         }
 
@@ -593,44 +593,44 @@ namespace Tic_Tac_Toe
             //checks if the user has won
            if(one == "X" && two == "X" && three == "X")
             {
-				var color = Console.ForegroundColor;
+		var color = Console.ForegroundColor;
                 gameResult = true;
 
             }
             if ( four == "X" && five == "X" && six == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
             if (seven == "X" && eight == "X" && nine == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
             if (one == "X" && four == "X" && seven == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
             if (two  == "X" && five == "X" && eight == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
             if (three == "X" && six == "X" && nine == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
             if (one == "X" && five == "X" && nine == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
             if (seven == "X" && five == "X" && three == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
             }
 
 			if (gameResult == true)
@@ -642,57 +642,57 @@ namespace Tic_Tac_Toe
             //checks if the computer has won
             if (one == "O" && two == "O" && three == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (four == "O" && five == "O" && six == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (seven == "O" && eight == "O" && nine == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (one == "O" && four == "O" && seven == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (two == "O" && five == "O" && eight == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (three == "O" && six == "O" && nine == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (one == "O" && five == "O" && nine == "O")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
             if (seven == "O" && five == "X" && three == "X")
             {
-				var color = Console.ForegroundColor;
-				gameResult = true;
+		var color = Console.ForegroundColor;
+		gameResult = true;
                 UserOrPc = true;
             }
 
             End:
-			{
-
-			}
+	        {
+			
+		}
 
         }
 
@@ -703,19 +703,19 @@ namespace Tic_Tac_Toe
             Console.WriteLine("Games Played:" + totalGames);
             Console.WriteLine("        " + "Wins:" + wins);
             Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("                    _______");
+	    Console.WriteLine("                    _______");
             Console.WriteLine("                    |" + one + "|"+ two + "|" + three + "|");
             Console.WriteLine("                    |" + four + "|" + five + "|" + six + "|");
             Console.WriteLine("                    |" + seven + "|" + eight + "|" + nine + "|");
-			Console.WriteLine("                    _______");
-			Console.WriteLine("");
+	    Console.WriteLine("                    _______");
+	    Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("To play type the number you want to change to X and hit enter.");
         }
 
         static void Main()
         {
-			Console.Title = "Tic Tac Toe";
+	    Console.Title = "Tic Tac Toe";
             SpeechSynthesizer synth = new SpeechSynthesizer();
             Random r = new Random();
             Thread MusicWorker = new Thread(PlayMusic);
@@ -726,7 +726,7 @@ namespace Tic_Tac_Toe
 				Console.SetWindowSize(i, i);
 				Thread.Sleep(6);
 			}*/
-			Console.SetWindowSize(65, 20);
+	   Console.SetWindowSize(65, 20);
 			
 
             Main:
@@ -754,8 +754,8 @@ namespace Tic_Tac_Toe
                 Console.WriteLine("-------------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Thread.Sleep(150);
-				Console.WriteLine("Press any key to start the game!");
-				Console.ReadKey();
+		Console.WriteLine("Press any key to start the game!");
+		Console.ReadKey();
               //  Console.WriteLine("");
               //  Console.WriteLine("Type 0 to play vs the computer or 1 to play vs another player...");
            /*     try
@@ -1015,8 +1015,7 @@ namespace Tic_Tac_Toe
                     Console.Clear();
                     DrawUI();
                     CheckForWin();
-	
-						counter++;
+	            counter++;
 						if (gameResult == true)
 						{
 							
