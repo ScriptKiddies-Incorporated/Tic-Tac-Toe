@@ -12,6 +12,543 @@ namespace Tic_Tac_Toe
 {
     class Program
     {
+	     static int BotAlgo()
+        {
+            //first turn
+            switch (userChoice1)
+            {
+                case 1:
+                    if (one == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(2, 5);
+                        if (botChoice == 3)
+                        {
+                            goto A;
+                        }
+                        if (botChoice == 2)
+                        {
+                            switch (userChoice2)
+                            {
+                                case 3:
+                                    if (three == "X")
+                                    {
+                                        Random r1 = new Random();
+                                        botChoice = r1.Next(4, 6);
+                                        if (botChoice == 4)
+                                        {
+                                            switch (userChoice3)
+                                            {
+                                                case 5:
+                                                    if (five == "X")
+                                                    {
+                                                    B:
+                                                        Random r2 = new Random();
+                                                        botChoice = r2.Next(7, 9);
+                                                        if (botChoice == 8)
+                                                        {
+                                                            goto B;//player wins
+                                                        }
+                                                    }
+                                                    break;
+
+                                                case 6:
+                                                    if (six == "X")
+                                                    {
+                                                        botChoice = 9;
+                                                    }
+                                                    switch (userChoice4)
+                                                    {
+                                                        case 5:
+                                                            if (five == "X")
+                                                            {
+                                                                botChoice = 7;
+                                                            }
+                                                            break;//draw
+                                                        case 8:
+                                                            if (eight == "X")
+                                                            {
+                                                            C:
+                                                                Random r3 = new Random();
+                                                                botChoice = r3.Next(5, 7);
+                                                                if (botChoice == 6)
+                                                                {
+                                                                    goto C;//draw
+                                                                }
+                                                            }
+                                                            break;
+                                                        case 7:
+                                                            if (seven == "X")
+                                                            {
+                                                                botChoice = 5;//draw
+                                                            }
+                                                            break;
+                                                    }
+                                                    break;
+                                                case 7:
+                                                    if (seven == "X")
+                                                    {
+                                                        botChoice = 5;
+                                                    }
+                                                    switch (userChoice4)
+                                                    {
+                                                        case 9:
+                                                            if (nine == "X")
+                                                            {
+                                                                botChoice = 6;//bot wins
+
+                                                            }
+                                                            break;
+                                                        case 6:
+                                                            if (six == "X")
+                                                            {
+                                                                botChoice = 9;//draw
+                                                            }
+                                                            break;
+                                                        case 8:
+                                                            if (eight == "X")
+                                                            {
+                                                                botChoice = 9;//draw
+                                                            }
+                                                            break;
+                                                    }
+                                                    break;
+                                                case 8:
+                                                    if (eight == "X")
+                                                    {
+                                                        Random r5 = new Random();
+                                                        botChoice = r5.Next(5, 6);
+                                                        if (botChoice == 5)
+                                                        {
+                                                            switch (userChoice4)
+                                                            {
+                                                                case 6:
+                                                                    if (six == "X")
+                                                                    {
+                                                                        botChoice = 9;//draw
+                                                                    }
+                                                                    break;
+                                                                case 9:
+                                                                    if (nine == "X")
+                                                                    {
+                                                                        botChoice = 6;//bot wins
+                                                                    }
+                                                                    break;
+                                                                case 7:
+                                                                    if (seven == "X")
+                                                                    {
+                                                                        botChoice = 6;
+                                                                    }
+                                                                    break;
+
+                                                            }
+                                                        }
+                                                        if (botChoice == 6)
+                                                        {
+                                                            switch (userChoice4)
+                                                            {
+                                                                case 5:
+                                                                    if (five == "X")
+                                                                    {
+                                                                        Random r6 = new Random();
+                                                                        botChoice = r6.Next(7, 9);
+                                                                        if (botChoice == 8)
+                                                                        {
+                                                                            goto case 5;//draw
+                                                                        }
+                                                                    }
+                                                                    break;
+                                                                case 9:
+                                                                    if (nine == "X")
+                                                                    {
+                                                                        botChoice = 5;//bot wins
+                                                                    }
+                                                                    break;
+                                                                case 7:
+                                                                    if (seven == "X")
+                                                                    {
+                                                                        botChoice = 5;//bot wins
+                                                                    }
+                                                                    break;
+                                                            }
+
+                                                        }
+
+                                                    }
+                                                    break;
+                                                case 9:
+                                                    if (nine == "X")
+                                                    {
+                                                        Random r7 = new Random();
+                                                        botChoice = r7.Next(5, 6);//player wins
+
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                        if (botChoice == 5)
+                                        {
+                                            switch (userChoice3)
+                                            {
+                                                case 8:
+                                                    if (eight == "X")
+                                                    {
+                                                        Random r8 = new Random();
+                                                        botChoice = r8.Next(7, 9);
+                                                        if (botChoice == 8)
+                                                        {
+                                                            goto case 8;
+                                                        }
+                                                        if (botChoice == 7)
+                                                        {
+                                                            switch (userChoice4)
+                                                            {
+                                                                case 9:
+                                                                    if (nine == "X")
+                                                                    {
+                                                                        botChoice = 6;//draw
+                                                                    }
+                                                                    break;
+                                                                case 6:
+                                                                    if (six == "X")
+                                                                    {
+                                                                        botChoice = 9;//draw
+                                                                    }
+                                                                    break;
+                                                            }
+                                                            if (botChoice == 9)
+                                                            {
+                                                                switch (userChoice4)
+                                                                {
+                                                                    case 7:
+                                                                        if (seven == "X")
+                                                                        {
+                                                                            botChoice = 4;//draw
+                                                                        }
+                                                                        break;
+                                                                    case 4:
+                                                                        if (four == "X")
+                                                                        {
+                                                                            botChoice = 7;
+                                                                        }
+                                                                        break;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                        if (botChoice == 6)
+                                        {
+                                            switch (userChoice3)
+                                            {
+                                                case 5:
+                                                    if (five == "X")
+                                                    {
+                                                        Random r8 = new Random();
+                                                        botChoice = r8.Next(7, 9);
+                                                        if (botChoice == 8)
+                                                        {
+                                                            goto case 5;//player wins
+                                                        }
+                                                    }
+                                                    break;
+                                                case 4:
+                                                    if (four == "X")
+                                                    {
+                                                        botChoice = 7;
+                                                    }
+                                                    switch (userChoice4)
+                                                    {
+                                                        case 5:
+                                                            if (five == "X")
+                                                            {
+                                                                Random r9 = new Random();
+                                                                botChoice = r9.Next(8, 9);//draw 
+                                                            }
+                                                            break;
+                                                        case 8:
+                                                            if (eight == "X")
+                                                            {
+                                                                botChoice = 5;//draw
+                                                            }
+                                                            break;
+                                                        case 9:
+                                                            if (nine == "X")
+                                                            {
+                                                                botChoice = 5;
+                                                            }
+                                                            break;
+                                                    }
+                                                    break;
+                                                case 7:
+                                                    if (seven == "X")
+                                                    {
+                                                        Random r10 = new Random();
+                                                        botChoice = r10.Next(4, 5);//player wins
+                                                    }
+                                                    break;
+                                                case 8:
+                                                    if (eight == "X")
+                                                    {
+                                                        Random r11 = new Random();
+                                                        botChoice = r11.Next(4, 5);
+                                                    }
+                                                    if (botChoice == 4)
+                                                    {
+                                                        switch (userChoice4)
+                                                        {
+                                                            case 5:
+                                                                if (five == "X")
+                                                                {
+                                                                    Random r12 = new Random();
+                                                                    botChoice = r12.Next(7, 9);
+                                                                }
+                                                                if (botChoice == 8)
+                                                                {
+                                                                    goto case 5;//draw
+                                                                }
+                                                                break;
+
+                                                        }
+                                                        if (botChoice == 5)
+                                                        {
+                                                            switch (userChoice4)
+                                                            {
+                                                                case 4:
+                                                                    if (four == "X")
+                                                                    {
+                                                                        botChoice = 7;//draw
+                                                                    }
+                                                                    break;
+                                                                case 7:
+                                                                    if (seven == "X")
+                                                                    {
+                                                                        Random r13 = new Random();
+                                                                        botChoice = r13.Next(4, 9);
+                                                                    }
+                                                                    if (botChoice == 5 || botChoice == 6 || botChoice == 7 || botChoice == 8)
+                                                                    {
+                                                                        goto case 7;//player wins 
+                                                                    }
+                                                                    break;
+                                                                case 9:
+                                                                    if (nine == "X")
+                                                                    {
+                                                                        Random r14 = new Random();
+                                                                        botChoice = r14.Next(4, 7);
+                                                                    }
+                                                                    if (botChoice == 5 || botChoice == 6)
+                                                                    {
+                                                                        goto case 9;//draw
+                                                                    }
+                                                                    break;
+                                                            }
+                                                        }
+                                                    }
+                                                    break;
+                                                case 9:
+                                                    if (nine == "X")
+                                                    {
+                                                        botChoice = 5;
+                                                    }
+                                                    switch (userChoice4)
+                                                    {
+                                                        case 4:
+                                                            if (four == "X")
+                                                            {
+                                                                botChoice = 7;//draw
+                                                            }
+                                                            break;
+                                                        case 8:
+                                                            if (eight == "X")
+                                                            {
+                                                                botChoice = 7;//draw
+                                                            }
+                                                            break;
+                                                        case 7:
+                                                            if (seven == "X")
+                                                            {
+                                                                Random r14 = new Random();
+                                                                botChoice = r14.Next(4, 8);
+                                                            }
+                                                            if (botChoice == 5 || botChoice == 6 || botChoice == 7)
+                                                            {
+                                                                goto case 7;//player wins
+                                                            }
+                                                            break;
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    if (four=="X")
+                                    {
+                                        botChoice = 7;
+                                    }
+                                    switch(userChoice3)
+                                    {
+                                        case 3:
+                                            if (three=="X")
+                                            {
+                                                Random r15 = new Random();
+                                                botChoice = r15.Next(5, 9);
+                                            }
+                                            if (botChoice==7)
+                                            {
+                                                goto case 3;
+                                            }
+                                            if (botChoice==5)
+                                            {
+                                                switch(userChoice4)
+                                                {
+                                                    case 6:
+                                                        if (six=="X")
+                                                        {
+                                                            botChoice = 8;//bot wins
+                                                        }
+                                                        break;
+                                                    case 9:
+                                                        if (nine=="X")
+                                                        {
+                                                            botChoice = 8;//bot wins
+                                                        }
+                                                        break;
+                                                    case 8:
+                                                        if (eight=="X")
+                                                        {
+                                                            Random r15 = new Random();
+                                                            botChoice = r15.Next(6, 9);
+                                                        }
+                                                        if (botChoice==7||botChoice==8)
+                                                        {
+                                                            goto case 8;
+                                                        }
+                                                        break;
+                                                }
+                                            }
+                                            if (botChoice==6)
+                                            {
+                                                //here
+                                            }
+                                            break;
+                                    }
+                                    break;
+                            }
+                        }
+                    }
+                    break;
+                case 2:
+                    if (two == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(1, 5);
+                        if (botChoice == 4 || botChoice == 2)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 3:
+                    if (three == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(2, 6);
+                        if (botChoice == 3 || botChoice == 4)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 4:
+                    if (four == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(1, 7);
+                        if (botChoice == 4 || botChoice == 2 || botChoice == 3 || botChoice == 6)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 5:
+                    if (five == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(1, 9);
+                        if (botChoice == 5)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 6:
+                    if (six == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(3, 9);
+                        if (botChoice == 4 || botChoice == 6 || botChoice == 7 || botChoice == 8)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 7:
+                    if (seven == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(4, 8);
+                        if (botChoice == 6 || botChoice == 7)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 8:
+                    if (eight == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(5, 9);
+                        if (botChoice == 6 || botChoice == 8)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+                case 9:
+                    if (nine == "X")
+                    {
+                    A:
+                        Random r = new Random();
+                        botChoice = r.Next(5, 8);
+                        if (botChoice == 7)
+                        {
+                            goto A;
+                        }
+
+                    }
+                    break;
+            }
+                    return botChoice;
+        }
         //variables
         static string one = "1";
         static string two = "2";
@@ -29,6 +566,10 @@ namespace Tic_Tac_Toe
         static int userChoice;
         static int botChoice;
         static int counter;
+	    static int userChoice1;//additions for the BotAlgo()
+	    static int userChoice2;
+	    static int userChoice3;
+	    static int userChoice4;
       //  static int vs;
 
 
