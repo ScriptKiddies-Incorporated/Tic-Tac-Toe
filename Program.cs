@@ -1916,13 +1916,12 @@ namespace Tic_Tac_Toe
                 nine = "9";
                // vs = 0;
                 userChoice = 0;
-                botChoice = 0;
                 counter = 0;
                 gameResult = false;
                 UserOrPc = false;
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Tic Tac Toe v1.0 by Kalin Lalov");
+                Console.WriteLine("Tic Tac Toe v1.1 by Kalin Lalov and Miro K.");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("-------------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.Green;
