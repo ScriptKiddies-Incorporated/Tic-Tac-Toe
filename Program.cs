@@ -14,11 +14,11 @@ namespace Tic_Tac_Toe
     {
 	     static int BotAlgo()
         {
-            if (one == "X" && two == "X")
+                        if (one == "X" && two == "X")
             {
                 if (three != "X")
                 {
-                    three = "O";
+                    botChoice = 3;
                 }
             }
             else
@@ -35,7 +35,7 @@ namespace Tic_Tac_Toe
                         }
                     else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                      break;
                     case 2:
@@ -45,7 +45,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -55,7 +55,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -65,7 +65,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -75,7 +75,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -85,7 +85,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -95,7 +95,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -105,7 +105,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -115,7 +115,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -125,7 +125,7 @@ namespace Tic_Tac_Toe
             {
                 if (seven != "X")
                 {
-                    seven = "O";
+                    botChoice = 7;
                 }
             }
             else
@@ -142,7 +142,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -152,7 +152,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -162,7 +162,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -172,7 +172,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -182,7 +182,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -192,7 +192,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -202,7 +202,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -212,7 +212,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -222,7 +222,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -232,7 +232,7 @@ namespace Tic_Tac_Toe
             {
                 if (nine != "X")
                 {
-                    nine = "O";
+                    botChoice = 9;
                 }
             }
             else
@@ -249,7 +249,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -259,7 +259,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -269,7 +269,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -279,7 +279,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -289,7 +289,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -299,7 +299,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -309,7 +309,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -319,7 +319,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -329,7 +329,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -339,7 +339,7 @@ namespace Tic_Tac_Toe
             {
                 if (one != "X")
                 {
-                    one = "O";
+                    botChoice = 1;
                 }
             }
             else
@@ -356,7 +356,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -366,7 +366,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -376,7 +376,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -386,7 +386,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -396,7 +396,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -406,7 +406,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -416,7 +416,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -426,7 +426,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -436,7 +436,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -446,7 +446,7 @@ namespace Tic_Tac_Toe
             {
                 if (eight != "X")
                 {
-                    eight = "O";
+                    botChoice = 8;
                 }
             }
             else
@@ -463,7 +463,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -473,7 +473,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -483,7 +483,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -493,7 +493,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -503,7 +503,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -513,7 +513,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -523,7 +523,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -533,7 +533,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -543,7 +543,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -552,7 +552,7 @@ namespace Tic_Tac_Toe
             {
                 if (nine != "X")
                 {
-                    nine = "O";
+                    botChoice = 9;
                 }
             }
             else
@@ -569,7 +569,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -579,7 +579,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -589,7 +589,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -599,7 +599,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -609,7 +609,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -619,7 +619,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -629,7 +629,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -639,7 +639,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -649,7 +649,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -659,7 +659,7 @@ namespace Tic_Tac_Toe
             {
                 if (seven != "X")
                 {
-                    seven = "O";
+                    botChoice = 7;
                 }
             }
             else
@@ -676,7 +676,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -686,7 +686,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -696,7 +696,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -706,7 +706,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -716,7 +716,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -726,7 +726,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -736,7 +736,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -746,7 +746,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -756,7 +756,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -766,7 +766,7 @@ namespace Tic_Tac_Toe
             {
                 if (six != "X")
                 {
-                    six = "O";
+                    botChoice = 6;
                 }
             }
             else
@@ -783,7 +783,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -793,7 +793,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -803,7 +803,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -813,7 +813,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -823,7 +823,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -833,7 +833,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -843,7 +843,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -853,7 +853,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -863,7 +863,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -873,7 +873,7 @@ namespace Tic_Tac_Toe
             {
                 if (one != "X")
                 {
-                    one = "O";
+                    botChoice = 1;
                 }
             }
             else
@@ -890,7 +890,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -900,7 +900,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -910,7 +910,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -920,7 +920,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -930,7 +930,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -940,7 +940,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -950,7 +950,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -960,7 +960,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -970,7 +970,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -980,7 +980,7 @@ namespace Tic_Tac_Toe
             {
                 if (four != "X")
                 {
-                    four = "O";
+                    botChoice = 4;
                 }
             }
             else
@@ -997,7 +997,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1007,7 +1007,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1017,7 +1017,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1027,7 +1027,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1037,7 +1037,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1047,7 +1047,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1057,7 +1057,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1067,7 +1067,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1077,7 +1077,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -1087,7 +1087,7 @@ namespace Tic_Tac_Toe
             {
                 if (three != "X")
                 {
-                    three = "O";
+                    botChoice = 3;
                 }
             }
             else
@@ -1104,7 +1104,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1114,7 +1114,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1124,7 +1124,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1134,7 +1134,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1144,7 +1144,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1154,7 +1154,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1164,7 +1164,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1174,7 +1174,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1184,7 +1184,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -1194,7 +1194,7 @@ namespace Tic_Tac_Toe
             {
                 if (one != "X")
                 {
-                    one = "O";
+                    botChoice = 1;
                 }
             }
             else
@@ -1211,7 +1211,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1221,7 +1221,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1231,7 +1231,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1241,7 +1241,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1251,7 +1251,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1261,7 +1261,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1271,7 +1271,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1281,7 +1281,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1291,7 +1291,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -1301,7 +1301,7 @@ namespace Tic_Tac_Toe
             {
                 if (two != "X")
                 {
-                    two = "O";
+                    botChoice = 2;
                 }
             }
             else
@@ -1318,7 +1318,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1328,7 +1328,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1338,7 +1338,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1348,7 +1348,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1358,7 +1358,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1368,7 +1368,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1378,7 +1378,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1388,7 +1388,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1398,7 +1398,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -1408,7 +1408,7 @@ namespace Tic_Tac_Toe
             {
                 if (three != "X")
                 {
-                    three = "O";
+                    botChoice = 3;
                 }
             }
             else
@@ -1425,7 +1425,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1435,7 +1435,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1445,7 +1445,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1455,7 +1455,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1465,7 +1465,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1475,7 +1475,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1485,7 +1485,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1495,7 +1495,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1505,7 +1505,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -1515,7 +1515,7 @@ namespace Tic_Tac_Toe
             {
                 if (nine != "X")
                 {
-                    nine = "O";
+                    botChoice = 9;
                 }
             }
             else
@@ -1532,7 +1532,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1542,7 +1542,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1552,7 +1552,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1562,7 +1562,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1572,7 +1572,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1582,7 +1582,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1592,7 +1592,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1602,7 +1602,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1612,7 +1612,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
@@ -1622,7 +1622,7 @@ namespace Tic_Tac_Toe
             {
                 if (seven != "X")
                 {
-                    seven = "O";
+                    botChoice = 7;
                 }
             }
             else
@@ -1639,7 +1639,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            one = "O";
+                            botChoice = 1;
                         }
                         break;
                     case 2:
@@ -1649,7 +1649,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            two = "O";
+                            botChoice = 2;
                         }
                         break;
                     case 3:
@@ -1659,7 +1659,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            three = "O";
+                            botChoice = 3;
                         }
                         break;
                     case 4:
@@ -1669,7 +1669,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            four = "O";
+                            botChoice = 4;
                         }
                         break;
                     case 5:
@@ -1679,7 +1679,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            five = "O";
+                            botChoice = 5;
                         }
                         break;
                     case 6:
@@ -1689,7 +1689,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            six = "O";
+                            botChoice = 6;
                         }
                         break;
                     case 7:
@@ -1699,7 +1699,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            seven = "O";
+                            botChoice = 7;
                         }
                         break;
                     case 8:
@@ -1709,7 +1709,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            eight = "O";
+                            botChoice = 8;
                         }
                         break;
                     case 9:
@@ -1719,7 +1719,7 @@ namespace Tic_Tac_Toe
                         }
                         else
                         {
-                            nine = "O";
+                            botChoice = 9;
                         }
                         break;
                 }
