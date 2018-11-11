@@ -12,1620 +12,373 @@ namespace Tic_Tac_Toe
 {
     class Program
     {
-	     static int BotAlgo()
+	      static int getBotChoice()
         {
-                        if (one == "X" && two == "X")
-            {
-                if (three != "X")
-                {
-                    botChoice = 3;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch(botChoice)
-                {
-                    case 1:
-                    if (one=="X"||one=="O")
-                        {
-                            goto A;
-                        }
-                    else
-                        {
-                            botChoice = 1;
-                        }
-                     break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
 
-            if (one == "X" && four == "X")
-            {
-                if (seven != "X")
-                {
-                    botChoice = 7;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
 
-            if (one == "X" && five == "X")
-            {
-                if (nine != "X")
-                {
-                    botChoice = 9;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
 
-            if (two == "X" && three == "X")
+            if (one == "X" && seven == "X" && nine == "X")
             {
-                if (one != "X")
-                {
-                    botChoice = 1;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (two == "X" && five == "X")
-            {
-                if (eight != "X")
-                {
-                    botChoice = 8;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-            if (three == "X" && six == "X")
-            {
-                if (nine != "X")
-                {
-                    botChoice = 9;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (three == "X" && five == "X")
-            {
-                if (seven != "X")
-                {
-                    botChoice = 7;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (four == "X" && five == "X")
-            {
-                if (six != "X")
-                {
-                    botChoice = 6;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (four == "X" && seven == "X")
-            {
-                if (one != "X")
-                {
-                    botChoice = 1;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (five == "X" && six == "X")
-            {
-                if (four != "X")
+                if (four != "X" && four != "O")
                 {
                     botChoice = 4;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
+                    four = "O";
+                    br = 2;
                 }
             }
 
-            if (five == "X" && seven == "X")
+            if (one == "X" && three == "X" && nine == "X")
             {
-                if (three != "X")
-                {
-                    botChoice = 3;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (five == "X" && nine == "X")
-            {
-                if (one != "X")
-                {
-                    botChoice = 1;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-                }
-            }
-
-            if (five == "X" && eight == "X")
-            {
-                if (two != "X")
+                if (two != "X" && two != "O")
                 {
                     botChoice = 2;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
+                    two = "O";
+                    br = 2;
                 }
             }
 
-            if (six == "X" && nine == "X")
+            if (one == "X" && seven == "X" && three == "X")
             {
-                if (three != "X")
+                if (four != "X" && four != "O")
                 {
-                    botChoice = 3;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
+                    botChoice = 4;
+                    four = "O";
+                    br = 2;
                 }
             }
 
-            if (seven == "X" && eight == "X")
+            if (three == "X" && seven == "X" && nine == "X")
             {
-                if (nine != "X")
+                if (six != "X" && six != "O")
+                {
+                    botChoice = 6;
+                    six = "O";
+                    br = 2;
+                }
+            }
+
+            if (one == "X" && seven == "X" && five == "X")
+            {
+                if (nine != "X" && nine != "O")
                 {
                     botChoice = 9;
-                }
-            }
-            else
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
+                    nine = "O";
+                    br = 2;
                 }
             }
 
-            if (eight == "X" && nine == "X")
+            if (three == "X" && five == "X" && nine == "X")
             {
-                if (seven != "X")
+                if (seven != "X" && seven != "O")
                 {
                     botChoice = 7;
+                    seven = "O";
+                    br = 2;
                 }
             }
-            else
+
+            if (one == "X" && five == "X" && three == "X")
+            {
+                if (nine != "X" && nine != "O")
+                {
+                    botChoice = 9;
+                    nine = "O";
+                    br = 2;
+                }
+            }
+
+            if (five == "X" && seven == "X" && nine == "X")
+            {
+                if (three != "X" && three != "O")
+                {
+                    botChoice = 3;
+                    three = "O";
+                    br = 2;
+                }
+            }
+
+
+            if (br != 2)
+            {
+                if (one == "X" && two == "X")
+                {
+                    if (three != "X" && three != "O")
+                    {
+                        botChoice = 3;
+                        three = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+                if (one == "X" && three == "X")
+                {
+                    if (two != "X" && two != "O")
+                    {
+                        botChoice = 2;
+                        two = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+                if (one == "X" && four == "X")
+                {
+                    if (seven != "X" && seven != "O")
+                    {
+                        botChoice = 7;
+                        seven = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+                if (one == "X" && five == "X")
+                {
+                    if (nine != "X" && nine != "O")
+                    {
+                        botChoice = 9;
+                        nine = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+                if (two == "X" && three == "X")
+                {
+                    if (one != "X" && one != "O")
+                    {
+                        botChoice = 1;
+                        one = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+
+                if (two == "X" && five == "X")
+                {
+                    if (eight != "X" && eight != "O")
+                    {
+                        botChoice = 8;
+                        eight = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+                if (three == "X" && six == "X")
+                {
+                    if (nine != "X" && nine != "O")
+                    {
+                        botChoice = 9;
+                        nine = "O";
+                        br = 1;
+
+                    }
+
+                }
+
+
+
+                if (three == "X" && five == "X")
+                {
+                    if (seven != "X" && seven != "O")
+                    {
+                        botChoice = 7;
+                        seven = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+                if (four == "X" && five == "X")
+                {
+                    if (six != "X" && six != "O")
+                    {
+                        botChoice = 6;
+                        six = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+
+                if (four == "X" && seven == "X")
+                {
+                    if (one != "X" && one != "O")
+                    {
+                        botChoice = 1;
+                        one = "O";
+                        br = 1;
+
+                    }
+                }
+
+		 if (three == "X" && nine == "X")
+                {
+                    if (six != "X" && six != "O")
+                    {
+                        botChoice = 6;
+                        six = "O";
+                        br = 1;
+                    }
+                }
+
+
+                if (five == "X" && six == "X")
+                {
+                    if (four != "X" && four != "O")
+                    {
+                        botChoice = 4;
+                        four = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+
+                if (five == "X" && seven == "X")
+                {
+                    if (three != "X" && three != "O")
+                    {
+                        botChoice = 3;
+                        three = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+                if (five == "X" && nine == "X")
+                {
+                    if (one != "X" && one != "O")
+                    {
+                        botChoice = 1;
+                        one = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+                if (five == "X" && eight == "X")
+                {
+                    if (two != "X" && two != "O")
+                    {
+                        botChoice = 2;
+                        two = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+
+
+                if (six == "X" && nine == "X")
+                {
+                    if (three != "X" && three != "O")
+                    {
+                        botChoice = 3;
+                        three = "O";
+                        br = 1;
+
+                    }
+
+                }
+
+
+
+                if (seven == "X" && eight == "X")
+                {
+                    if (nine != "X" && nine != "O")
+                    {
+                        botChoice = 9;
+                        nine = "O";
+                        br = 1;
+
+                    }
+                }
+
+
+                if (three == "X" && seven == "X")
+                {
+                    if (five != "X" && five != "O")
+                    {
+                        botChoice = 5;
+                        five = "O";
+                        br = 1;
+
+                    }
+
+                }
+
+
+
+                if (eight == "X" && nine == "X")
+                {
+                    if (seven != "X" && seven != "O")
+                    {
+                        botChoice = 7;
+                        seven = "O";
+                        br = 1;
+
+                    }
+
+                }
+
+                if (one == "X" && seven == "X")
+                {
+                    if (four != "X" && four != "O")
+                    {
+                        botChoice = 4;
+                        four = "O";
+                        br = 1;
+                    }
+                }
+
+                if (seven == "X" && nine == "X")
+                {
+                    if (eight != "X" && eight != "O")
+                    {
+                        botChoice = 8;
+                        eight = "O";
+                        br = 1;
+                    }
+                }
+
+            }
+
+
+
+            if (counter == 1 || br == 0)
             {
             A:
                 Random r = new Random();
@@ -1640,6 +393,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 1;
+                            one = "O";
                         }
                         break;
                     case 2:
@@ -1650,6 +404,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 2;
+                            two = "O";
                         }
                         break;
                     case 3:
@@ -1660,6 +415,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 3;
+                            three = "O";
                         }
                         break;
                     case 4:
@@ -1670,6 +426,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 4;
+                            four = "O";
                         }
                         break;
                     case 5:
@@ -1680,6 +437,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 5;
+                            five = "O";
                         }
                         break;
                     case 6:
@@ -1690,6 +448,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 6;
+                            six = "O";
                         }
                         break;
                     case 7:
@@ -1700,6 +459,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 7;
+                            seven = "O";
                         }
                         break;
                     case 8:
@@ -1710,6 +470,7 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 8;
+                            eight = "O";
                         }
                         break;
                     case 9:
@@ -1720,12 +481,18 @@ namespace Tic_Tac_Toe
                         else
                         {
                             botChoice = 9;
+                            nine = "O";
                         }
                         break;
+
                 }
+
+
             }
             return botChoice;
         }
+           
+        
         //variables
         static string one = "1";
         static string two = "2";
@@ -1743,6 +510,7 @@ namespace Tic_Tac_Toe
         static int userChoice;
         static int botChoice;
         static int counter;
+	static int br = 0;
       //  static int vs;
 
 
@@ -1917,6 +685,7 @@ namespace Tic_Tac_Toe
                // vs = 0;
                 userChoice = 0;
                 counter = 0;
+		br = 0;
                 gameResult = false;
                 UserOrPc = false;
 
@@ -2088,7 +857,7 @@ namespace Tic_Tac_Toe
 
 
                         }
-
+				
 
                     }
                     catch/* em all */(Exception)
@@ -2102,92 +871,15 @@ namespace Tic_Tac_Toe
 
 
                     }
-                }
+                	counter++;
+			getBotChoice();
+			
 
-                ComputerChooses:
-                {
-                    botChoice = r.Next(1, 9);
-                    switch (botChoice)
-                    {
-
-                        case 1:
-                            if (one == "X" || one == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            one = "O";
-                            break;
-                        case 2:
-                            if (two == "X" || two == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            two = "O";
-                            break;
-                        case 3:
-                            if (three == "X" || three == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            three = "O";
-                            break;
-                        case 4:
-                            if (four == "X" || four == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            four = "O";
-                            break;
-                        case 5:
-                            if (five == "X" || five == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            five = "O";
-                            break;
-                        case 6:
-                            if (six == "X" || six == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            six = "O";
-                            break;
-                        case 7:
-                            if (seven == "X" || seven == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            seven = "O";
-                            break;
-                        case 8:
-                            if (eight == "X" || eight == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            eight = "O";
-                            break;
-                        case 9:
-                            if (nine == "X" || nine == "O")
-                            {
-                                botChoice = 0;
-                                goto ComputerChooses;
-                            }
-                            nine = "O";
-                            break;
-
-                    }
+                
                     Console.Clear();
                     DrawUI();
                     CheckForWin();
-	            counter++;
+	            
 						if (gameResult == true)
 						{
 							
