@@ -135,7 +135,18 @@ namespace Tic_Tac_Toe
 
 					}
 				}
+					
+				 if (one == "X" && nine == "X")
+               			 {
+                  			 if (five != "X" && five != "O")
+                   			 {
+                       				 botChoice = 5;
+                       				 five = "O";
+                       				 br = 1;
 
+                    			}
+
+               			 }
 
 
 				if (two == "X" && three == "X")
