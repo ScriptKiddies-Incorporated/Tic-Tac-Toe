@@ -721,11 +721,11 @@ namespace Tic_Tac_Toe
 			Console.WriteLine("Games Played:" + totalGames);
 			Console.WriteLine("        " + "Wins:" + wins);
 			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("                    _______");
-			Console.WriteLine("                    |" + one + "|" + two + "|" + three + "|");
-			Console.WriteLine("                    |" + four + "|" + five + "|" + six + "|");
-			Console.WriteLine("                    |" + seven + "|" + eight + "|" + nine + "|");
-			Console.WriteLine("                    _______");
+			Console.WriteLine("                    ┌─────┐");
+			Console.WriteLine("                    │" + one + "│" + two + "│" + three + "│");
+			Console.WriteLine("                    │" + four + "│" + five + "│" + six +  "│");
+			Console.WriteLine("                    │" + seven + "│" + eight + "│" + nine + "│");
+			Console.WriteLine("                    └─────┘");
 			Console.WriteLine("");
 			Console.ForegroundColor = ConsoleColor.Magenta;
 			Console.WriteLine("To play type the number you want to change to X and hit enter.");
@@ -831,7 +831,6 @@ namespace Tic_Tac_Toe
 									goto UsersTurn;
 								}
 								one = "X";
-								Thread.Sleep(2000);
 								break;
 							case 2:
 								if (two == "X" || two == "O")
