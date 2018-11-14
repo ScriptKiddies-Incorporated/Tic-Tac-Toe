@@ -19,7 +19,7 @@ namespace Tic_Tac_Toe
 			{
 				if (four != "X" && four != "O")
 				{
-					botChoice = 4;					
+					botChoice = 4;
 					br = 2;
 				}
 			}
@@ -87,116 +87,116 @@ namespace Tic_Tac_Toe
 					br = 2;
 				}
 			}
-			
-			
-		if (three == "X" && two == "X" && six == "X")
-            {
-                if (one != "X" && one != "O")
-                {
-                    botChoice = 1;
-                    br = 2;
-                }
-            }
-
-            if (six == "X" && eight == "X" && nine == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    br = 2;
-                }
-            }
-
-            if (one == "X" && two == "X" && four == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    br = 2;
-                }
-            }
-
-            if (four == "X" && seven == "X" && eight == "X")
-            {
-                if (one != "X" && one != "O")
-                {
-                    botChoice = 1;
-                    br = 2;
-                }
-            }
-
-            if (three == "X" && two == "X" && nine == "X")
-            {
-                if (six != "X" && six != "O")
-                {
-                    botChoice = 6;
-                    br = 2;
-                }
-            }
 
 
-            if (one == "X" && three == "X" && six == "X")
-            {
-                if (nine != "X" && nine != "O")
-                {
-                    botChoice = 9;
-                    br = 2;
-                }
-            }
+			if (three == "X" && two == "X" && six == "X")
+			{
+				if (one != "X" && one != "O")
+				{
+					botChoice = 1;
+					br = 2;
+				}
+			}
 
-            if (six == "X" && seven == "X" && nine == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    br = 2;
-                }
-            }
+			if (six == "X" && eight == "X" && nine == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					br = 2;
+				}
+			}
 
-            if (three == "X" && eight == "X" && nine == "X")
-            {
-                if (seven != "X" && seven != "O")
-                {
-                    botChoice = 7;
-                    br = 2;
-                }
-            }
+			if (one == "X" && two == "X" && four == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					br = 2;
+				}
+			}
 
-            if (one == "X" && seven == "X" && eight == "X")
-            {
-                if (four != "X" && four != "O")
-                {
-                    botChoice = 4;
-                    br = 2;
-                }
-            }
+			if (four == "X" && seven == "X" && eight == "X")
+			{
+				if (one != "X" && one != "O")
+				{
+					botChoice = 1;
+					br = 2;
+				}
+			}
 
-            if (four == "X" && seven == "X" && nine == "X")
-            {
-                if (eight != "X" && eight != "O")
-                {
-                    botChoice = 8;
-                    br = 2;
-                }
-            }
+			if (three == "X" && two == "X" && nine == "X")
+			{
+				if (six != "X" && six != "O")
+				{
+					botChoice = 6;
+					br = 2;
+				}
+			}
 
-            if (one == "X" && three == "X" && four == "X")
-            {
-                if (seven != "X" && seven != "O")
-                {
-                    botChoice = 7;
-                    br = 2;
-                }
-            }
 
-            if (one == "X" && seven == "X" && two == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    br = 2;
-                }
-            }
+			if (one == "X" && three == "X" && six == "X")
+			{
+				if (nine != "X" && nine != "O")
+				{
+					botChoice = 9;
+					br = 2;
+				}
+			}
+
+			if (six == "X" && seven == "X" && nine == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					br = 2;
+				}
+			}
+
+			if (three == "X" && eight == "X" && nine == "X")
+			{
+				if (seven != "X" && seven != "O")
+				{
+					botChoice = 7;
+					br = 2;
+				}
+			}
+
+			if (one == "X" && seven == "X" && eight == "X")
+			{
+				if (four != "X" && four != "O")
+				{
+					botChoice = 4;
+					br = 2;
+				}
+			}
+
+			if (four == "X" && seven == "X" && nine == "X")
+			{
+				if (eight != "X" && eight != "O")
+				{
+					botChoice = 8;
+					br = 2;
+				}
+			}
+
+			if (one == "X" && three == "X" && four == "X")
+			{
+				if (seven != "X" && seven != "O")
+				{
+					botChoice = 7;
+					br = 2;
+				}
+			}
+
+			if (one == "X" && seven == "X" && two == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					br = 2;
+				}
+			}
 
 
 			if (br != 2)
@@ -245,17 +245,17 @@ namespace Tic_Tac_Toe
 
 					}
 				}
-					
-				 if (one == "X" && nine == "X")
-               			 {
-                  			 if (five != "X" && five != "O")
-                   			 {
-                       				 botChoice = 5;
-                       				 br = 1;
 
-                    			}
+				if (one == "X" && nine == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						br = 1;
 
-               			 }
+					}
+
+				}
 
 
 				if (two == "X" && three == "X")
@@ -279,17 +279,17 @@ namespace Tic_Tac_Toe
 
 					}
 				}
-				
-				
-				                if (two == "X" && eight == "X")
-               				 {
-                    				if (five != "X" && five != "O")
-                   				 {
-                       					 botChoice = 5;
-                       					 br = 1;
 
-                   				 }
-              				  }
+
+				if (two == "X" && eight == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						br = 1;
+
+					}
+				}
 
 
 
@@ -326,17 +326,17 @@ namespace Tic_Tac_Toe
 
 					}
 				}
-				
-				
-				                if (four == "X" && six == "X")
-               				 {
-                   				 if (five != "X" && five != "O")
-                  				  {
-                       					 botChoice = 5;
-                       					 br = 1;
 
-                   				 }
-              				  }
+
+				if (four == "X" && six == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						br = 1;
+
+					}
+				}
 
 
 				if (four == "X" && seven == "X")
@@ -599,16 +599,13 @@ namespace Tic_Tac_Toe
 		//  static int vs;
 
 
-		static SoundPlayer s = new SoundPlayer((Properties.Resources.TheFatRat___Epic));
+		static SoundPlayer MusicPlayer = new SoundPlayer((Properties.Resources.TheFatRat___Epic));
+
 		static void PlayMusic()
 		{
 			//a function that will handle the music playback
 
-			while (true)
-			{
-				s.Play();
-				Thread.Sleep(164000);
-			}
+				MusicPlayer.PlayLooping();
 		}
 
 
@@ -662,7 +659,7 @@ namespace Tic_Tac_Toe
 			if (gameResult == true)
 			{
 
-				goto End;
+				return;
 			}
 
 			//checks if the computer has won
@@ -714,12 +711,7 @@ namespace Tic_Tac_Toe
 				gameResult = true;
 				UserOrPc = true;
 			}
-
-			End:
-			{
-
-			}
-
+			
 		}
 
 		static void DrawUI()
@@ -839,7 +831,7 @@ namespace Tic_Tac_Toe
 									goto UsersTurn;
 								}
 								one = "X";
-
+								Thread.Sleep(2000);
 								break;
 							case 2:
 								if (two == "X" || two == "O")
