@@ -13,2277 +13,2276 @@ namespace Tic_Tac_Toe
 	class Program
 	{
 		static int GetBotChoice()
-        {
-
-            if (one == "X" && seven == "X" && nine == "X")
-            {
-                if (four != "X" && four != "O")
-                {
-                    botChoice = 4;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-            if (one == "X" && three == "X" && nine == "X")
-            {
-                if (two != "X" && two != "O")
-                {
-                    botChoice = 2;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-            if (one == "X" && seven == "X" && three == "X")
-            {
-                if (four != "X" && four != "O")
-                {
-                    botChoice = 4;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-            if (three == "X" && seven == "X" && nine == "X")
-            {
-                if (six != "X" && six != "O")
-                {
-                    botChoice = 6;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-            if (one == "X" && seven == "X" && five == "X")
-            {
-                if (nine != "X" && nine != "O")
-                {
-                    botChoice = 9;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (three == "O" && six == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (three == "O" && nine == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (nine == "O" && six == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-            if (three == "X" && five == "X" && nine == "X")
-            {
-                if (seven != "X" && seven != "O")
-                {
-                    botChoice = 7;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (one == "O" && four == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (four == "O" && seven == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && seven == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-            if (one == "X" && five == "X" && three == "X")
-            {
-                if (nine != "X" && nine != "O")
-                {
-                    botChoice = 9;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (seven == "O" && eight == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (nine == "O" && eight == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (nine == "O" && seven == "O")
-                    {
-                        botChoice = 8;
-                    }
-                }
-            }
-
-            if (five == "X" && seven == "X" && nine == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (three == "O" && two == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (three == "O" && one == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (two == "O" && one == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-
-            if (three == "X" && two == "X" && six == "X")
-            {
-                if (one != "X" && one != "O")
-                {
-                    botChoice = 1;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (seven == "O" && eight == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (nine == "O" && eight == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (nine == "O" && seven == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (one == "O" && four == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (four == "O" && seven == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && seven == "O")
-                    {
-                        botChoice = 4;
-                    }
-                    if (one == "O" && five == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (five == "O" && nine == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && nine == "O")
-                    {
-                        botChoice = 5;
-                    }
-                }
-            }
-
-            if (six == "X" && eight == "X" && nine == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (one == "O" && four == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (four == "O" && seven == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && seven == "O")
-                    {
-                        botChoice = 4;
-                    }
-                    if (three == "O" && two == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (three == "O" && one == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (two == "O" && one == "O")
-                    {
-                        botChoice = 3;
-                    }
-                    if (three == "O" && seven == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (three == "O" && five == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (seven == "O" && five == "O")
-                    {
-                        botChoice = 3;
-                    }
-
-                }
-            }
-
-            if (one == "X" && two == "X" && four == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (three == "O" && seven == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (three == "O" && five == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (seven == "O" && five == "O")
-                    {
-                        botChoice = 3;
-                    }
-                    if (seven == "O" && eight == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (nine == "O" && eight == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (nine == "O" && seven == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (three == "O" && six == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (three == "O" && nine == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (nine == "O" && six == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-            if (four == "X" && seven == "X" && eight == "X")
-            {
-                if (one != "X" && one != "O")
-                {
-                    botChoice = 1;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (three == "O" && six == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (three == "O" && nine == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (nine == "O" && six == "O")
-                    {
-                        botChoice = 3;
-                    }
-                    if (one == "O" && five == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (five == "O" && nine == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && nine == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (three == "O" && two == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (three == "O" && one == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (two == "O" && one == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-            if (three == "X" && two == "X" && nine == "X")
-            {
-                if (six != "X" && six != "O")
-                {
-                    botChoice = 6;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (one == "O" && four == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (four == "O" && seven == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && seven == "O")
-                    {
-                        botChoice = 4;
-                    }
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-
-            if (one == "X" && three == "X" && six == "X")
-            {
-                if (nine != "X" && nine != "O")
-                {
-                    botChoice = 9;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (seven == "O" && eight == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (nine == "O" && eight == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (nine == "O" && seven == "O")
-                    {
-                        botChoice = 8;
-                    }
-                }
-            }
-
-            if (six == "X" && seven == "X" && nine == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (three == "O" && two == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (three == "O" && one == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (two == "O" && one == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-            if (three == "X" && eight == "X" && nine == "X")
-            {
-                if (seven != "X" && seven != "O")
-                {
-                    botChoice = 7;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                    if (one == "O" && four == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (four == "O" && seven == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (one == "O" && seven == "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-            }
-
-            if (one == "X" && seven == "X" && eight == "X")
-            {
-                if (four != "X" && four != "O")
-                {
-                    botChoice = 4;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                    if (three == "O" && six == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (three == "O" && nine == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (nine == "O" && six == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-            if (four == "X" && seven == "X" && nine == "X")
-            {
-                if (eight != "X" && eight != "O")
-                {
-                    botChoice = 8;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (three == "O" && two == "O")
-                    {
-                        botChoice = 1;
-                    }
-                    if (three == "O" && one == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (two == "O" && one == "O")
-                    {
-                        botChoice = 3;
-                    }
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                }
-            }
-
-            if (one == "X" && three == "X" && four == "X")
-            {
-                if (seven != "X" && seven != "O")
-                {
-                    botChoice = 7;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (two == "O" && five == "O")
-                    {
-                        botChoice = 8;
-                    }
-                    if (five == "O" && eight == "O")
-                    {
-                        botChoice = 2;
-                    }
-                    if (seven == "O" && eight == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (nine == "O" && eight == "O")
-                    {
-                        botChoice = 7;
-                    }
-                    if (nine == "O" && seven == "O")
-                    {
-                        botChoice = 8;
-                    }
-                }
-            }
-
-            if (one == "X" && seven == "X" && two == "X")
-            {
-                if (three != "X" && three != "O")
-                {
-                    botChoice = 3;
-                    isDefensive = true;
-                    isMultiChoice = 2;
-                    if (four == "O" && five == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (four == "O" && six == "O")
-                    {
-                        botChoice = 5;
-                    }
-                    if (five == "O" && six == "O")
-                    {
-                        botChoice = 4;
-                    }
-                    if (three == "O" && six == "O")
-                    {
-                        botChoice = 9;
-                    }
-                    if (three == "O" && nine == "O")
-                    {
-                        botChoice = 6;
-                    }
-                    if (nine == "O" && six == "O")
-                    {
-                        botChoice = 3;
-                    }
-                }
-            }
-
-
-            if (isMultiChoice != 2)
-            {
-                if (one == "X" && two == "X")
-                {
-                    if (three != "X" && three != "O")
-                    {
-                        botChoice = 3;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if(three =="O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-
-
-                    }
-                }
-
-
-                if (one == "X" && three == "X")
-                {
-                    if (two != "X" && two != "O")
-                    {
-                        botChoice = 2;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-
-                    }
-                }
-
-
-
-                if (one == "X" && four == "X")
-                {
-                    if (seven != "X" && seven != "O")
-                    {
-                        botChoice = 7;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-
-                    }
-                }
-
-
-
-                if (one == "X" && five == "X")
-                {
-                    if (nine != "X" && nine != "O")
-                    {
-                        botChoice = 9;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-
-                    }
-                }
-
-                if (one == "X" && nine == "X")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-
-                    }
-
-                }
-
-
-                if (two == "X" && three == "X")
-                {
-                    if (one != "X" && one != "O")
-                    {
-                        botChoice = 1;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-                    }
-                }
-
-
-
-                if (two == "X" && five == "X")
-                {
-                    if (eight != "X" && eight != "O")
-                    {
-                        botChoice = 8;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                    }
-                }
-
-
-                if (two == "X" && eight == "X")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-
-                    }
-                }
-
-
-
-
-                if (three == "X" && six == "X")
-                {
-                    if (nine != "X" && nine != "O")
-                    {
-                        botChoice = 9;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-
-                    }
-
-                }
-
-
-                if (three == "X" && five == "X")
-                {
-                    if (seven != "X" && seven != "O")
-                    {
-                        botChoice = 7;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                    }
-                }
-
-
-                if (four == "X" && five == "X")
-                {
-                    if (six != "X" && six != "O")
-                    {
-                        botChoice = 6;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                    }
-                }
-
-
-                if (four == "X" && six == "X")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                    }
-                }
-
-
-                if (four == "X" && seven == "X")
-                {
-                    if (one != "X" && one != "O")
-                    {
-                        botChoice = 1;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                    }
-                }
-
-                if (three == "X" && nine == "X")
-                {
-                    if (six != "X" && six != "O")
-                    {
-                        botChoice = 6;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                    }
-                }
-
-
-                if (five == "X" && six == "X")
-                {
-                    if (four != "X" && four != "O")
-                    {
-                        botChoice = 4;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (seven == "O" && eight == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (nine == "O" && eight == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && nine == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                    }
-                }
-
-
-
-
-
-                if (five == "X" && seven == "X")
-                {
-                    if (three != "X" && three != "O")
-                    {
-                        botChoice = 3;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                    }
-                }
-
-
-                if (five == "X" && nine == "X")
-                {
-                    if (one != "X" && one != "O")
-                    {
-                        botChoice = 1;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                    }
-                }
-
-
-                if (five == "X" && eight == "X")
-                {
-                    if (two != "X" && two != "O")
-                    {
-                        botChoice = 2;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                    }
-                }
-
-
-                if (six == "X" && nine == "X")
-                {
-                    if (three != "X" && three != "O")
-                    {
-                        botChoice = 3;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                    }
-
-                }
-
-
-                if (seven == "X" && eight == "X")
-                {
-                    if (nine != "X" && nine != "O")
-                    {
-                        botChoice = 9;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-                    }
-                }
-
-
-                if (three == "X" && seven == "X")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (one == "O" && five == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (five == "O" && nine == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && nine == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                    }
-
-                }
-
-
-                if (eight == "X" && nine == "X")
-                {
-                    if (seven != "X" && seven != "O")
-                    {
-                        botChoice = 7;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (four == "O" && one == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (four == "O" && seven == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && seven == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (three == "O" && five == "O")
-                        {
-                            botChoice = 7;
-                        }
-                        if (seven == "O" && five == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (three == "O" && seven == "O")
-                        {
-                            botChoice = 5;
-                        }
-                    }
-
-                }
-
-                if (one == "X" && seven == "X")
-                {
-                    if (four != "X" && four != "O")
-                    {
-                        botChoice = 4;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && six == "O")
-                        {
-                            botChoice = 9;
-                        }
-                        if (three == "O" && nine == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (nine == "O" && six == "O")
-                        {
-                            botChoice = 3;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                    }
-                }
-
-                if (seven == "X" && nine == "X")
-                {
-                    if (eight != "X" && eight != "O")
-                    {
-                        botChoice = 8;
-                        isDefensive = true;
-                        isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (two == "O" && five == "O")
-                        {
-                            botChoice = 8;
-                        }
-                        if (five == "O" && eight == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (four == "O" && five == "O")
-                        {
-                            botChoice = 6;
-                        }
-                        if (four == "O" && six == "O")
-                        {
-                            botChoice = 5;
-                        }
-                        if (five == "O" && six == "O")
-                        {
-                            botChoice = 4;
-                        }
-                        if (three == "O" && one == "O")
-                        {
-                            botChoice = 2;
-                        }
-                        if (three == "O" && two == "O")
-                        {
-                            botChoice = 1;
-                        }
-                        if (one == "O" && two == "O")
-                        {
-                            botChoice = 3;
-                        }
-                    }
-                }
-
-            }
-
-
-            if (counter == 1 || isMultiChoice == 0)
-            {
-            A:
-                Random r = new Random();
-                botChoice = r.Next(1, 9);
-                isDefensive = true;
-                switch (botChoice)
-                {
-                    case 1:
-                        if (one == "X" || one == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 1;
-                        }
-                        break;
-                    case 2:
-                        if (two == "X" || two == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 2;
-                        }
-                        break;
-                    case 3:
-                        if (three == "X" || three == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 3;
-                        }
-                        break;
-                    case 4:
-                        if (four == "X" || four == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 4;
-                        }
-                        break;
-                    case 5:
-                        if (five == "X" || five == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 5;
-                        }
-                        break;
-                    case 6:
-                        if (six == "X" || six == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 6;
-                        }
-                        break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 7;
-                        }
-                        break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 8;
-                        }
-                        break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
-                        {
-                            goto A;
-                        }
-                        else
-                        {
-                            botChoice = 9;
-                        }
-                        break;
-
-                }
-
-            }
-            if (isDefensive == false)
-            {
-                if (one == "O" && two == "O")
-                {
-                    if (three != "X" && three != "O")
-                    {
-                        botChoice = 3;
-
-                    }
-                }
-
-
-                if (one == "O" && three == "O")
-                {
-                    if (two != "X" && two != "O")
-                    {
-                        botChoice = 2;
-
-                    }
-                }
-
-
-
-                if (one == "O" && four == "O")
-                {
-                    if (seven != "X" && seven != "O")
-                    {
-                        botChoice = 7;
-
-                    }
-                }
-
-
-
-                if (one == "O" && five == "O")
-                {
-                    if (nine != "X" && nine != "O")
-                    {
-                        botChoice = 9;
-
-                    }
-                }
-
-                if (one == "O" && nine == "O")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-
-                    }
-
-                }
-
-
-                if (two == "O" && three == "O")
-                {
-                    if (one != "X" && one != "O")
-                    {
-                        botChoice = 1;
-
-                    }
-                }
-
-
-
-                if (two == "O" && five == "O")
-                {
-                    if (eight != "X" && eight != "O")
-                    {
-                        botChoice = 8;
-
-                    }
-                }
-
-
-                if (two == "O" && eight == "O")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-
-                    }
-                }
-
-
-
-
-                if (three == "O" && six == "O")
-                {
-                    if (nine != "X" && nine != "O")
-                    {
-                        botChoice = 9;
-
-                    }
-
-                }
-
-
-                if (three == "O" && five == "O")
-                {
-                    if (seven != "X" && seven != "O")
-                    {
-                        botChoice = 7;
-
-                    }
-                }
-
-
-                if (four == "O" && five == "O")
-                {
-                    if (six != "X" && six != "O")
-                    {
-                        botChoice = 6;
-
-                    }
-                }
-
-
-                if (four == "O" && six == "O")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-
-                    }
-                }
-
-
-                if (four == "O" && seven == "O")
-                {
-                    if (one != "X" && one != "O")
-                    {
-                        botChoice = 1;
-
-                    }
-                }
-
-                if (three == "O" && nine == "O")
-                {
-                    if (six != "X" && six != "O")
-                    {
-                        botChoice = 6;
-                    }
-                }
-
-
-                if (five == "O" && six == "O")
-                {
-                    if (four != "X" && four != "O")
-                    {
-                        botChoice = 4;
-
-                    }
-                }
-
-
-
-
-
-                if (five == "O" && seven == "O")
-                {
-                    if (three != "X" && three != "O")
-                    {
-                        botChoice = 3;
-
-                    }
-                }
-
-
-                if (five == "O" && nine == "O")
-                {
-                    if (one != "X" && one != "O")
-                    {
-                        botChoice = 1;
-
-                    }
-                }
-
-
-                if (five == "O" && eight == "O")
-                {
-                    if (two != "X" && two != "O")
-                    {
-                        botChoice = 2;
-
-                    }
-                }
-
-
-                if (six == "O" && nine == "O")
-                {
-                    if (three != "X" && three != "O")
-                    {
-                        botChoice = 3;
-
-                    }
-
-                }
-
-
-                if (seven == "O" && eight == "O")
-                {
-                    if (nine != "X" && nine != "O")
-                    {
-                        botChoice = 9;
-
-                    }
-                }
-
-
-                if (three == "O" && seven == "O")
-                {
-                    if (five != "X" && five != "O")
-                    {
-                        botChoice = 5;
-
-                    }
-
-                }
-
-
-                if (eight == "O" && nine == "O")
-                {
-                    if (seven != "X" && seven != "O")
-                    {
-                        botChoice = 7;
-
-                    }
-
-                }
-
-                if (one == "O" && seven == "O")
-                {
-                    if (four != "X" && four != "O")
-                    {
-                        botChoice = 4;
-                    }
-                }
-
-                if (seven == "O" && nine == "O")
-                {
-                    if (eight != "X" && eight != "O")
-                    {
-                        botChoice = 8;
-                    }
-                }
-
-            }
-            return botChoice;
-        }
+		{
+			if (one == "X" && seven == "X" && nine == "X")
+			{
+				if (four != "X" && four != "O")
+				{
+					botChoice = 4;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+			if (one == "X" && three == "X" && nine == "X")
+			{
+				if (two != "X" && two != "O")
+				{
+					botChoice = 2;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+			if (one == "X" && seven == "X" && three == "X")
+			{
+				if (four != "X" && four != "O")
+				{
+					botChoice = 4;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+			if (three == "X" && seven == "X" && nine == "X")
+			{
+				if (six != "X" && six != "O")
+				{
+					botChoice = 6;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+			if (one == "X" && seven == "X" && five == "X")
+			{
+				if (nine != "X" && nine != "O")
+				{
+					botChoice = 9;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (three == "O" && six == "O")
+					{
+						botChoice = 9;
+					}
+					if (three == "O" && nine == "O")
+					{
+						botChoice = 6;
+					}
+					if (nine == "O" && six == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+			if (three == "X" && five == "X" && nine == "X")
+			{
+				if (seven != "X" && seven != "O")
+				{
+					botChoice = 7;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (one == "O" && four == "O")
+					{
+						botChoice = 7;
+					}
+					if (four == "O" && seven == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && seven == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+			if (one == "X" && five == "X" && three == "X")
+			{
+				if (nine != "X" && nine != "O")
+				{
+					botChoice = 9;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (seven == "O" && eight == "O")
+					{
+						botChoice = 9;
+					}
+					if (nine == "O" && eight == "O")
+					{
+						botChoice = 7;
+					}
+					if (nine == "O" && seven == "O")
+					{
+						botChoice = 8;
+					}
+				}
+			}
+
+			if (five == "X" && seven == "X" && nine == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (three == "O" && two == "O")
+					{
+						botChoice = 1;
+					}
+					if (three == "O" && one == "O")
+					{
+						botChoice = 2;
+					}
+					if (two == "O" && one == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+
+			if (three == "X" && two == "X" && six == "X")
+			{
+				if (one != "X" && one != "O")
+				{
+					botChoice = 1;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (seven == "O" && eight == "O")
+					{
+						botChoice = 9;
+					}
+					if (nine == "O" && eight == "O")
+					{
+						botChoice = 7;
+					}
+					if (nine == "O" && seven == "O")
+					{
+						botChoice = 8;
+					}
+					if (one == "O" && four == "O")
+					{
+						botChoice = 7;
+					}
+					if (four == "O" && seven == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && seven == "O")
+					{
+						botChoice = 4;
+					}
+					if (one == "O" && five == "O")
+					{
+						botChoice = 9;
+					}
+					if (five == "O" && nine == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && nine == "O")
+					{
+						botChoice = 5;
+					}
+				}
+			}
+
+			if (six == "X" && eight == "X" && nine == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (one == "O" && four == "O")
+					{
+						botChoice = 7;
+					}
+					if (four == "O" && seven == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && seven == "O")
+					{
+						botChoice = 4;
+					}
+					if (three == "O" && two == "O")
+					{
+						botChoice = 1;
+					}
+					if (three == "O" && one == "O")
+					{
+						botChoice = 2;
+					}
+					if (two == "O" && one == "O")
+					{
+						botChoice = 3;
+					}
+					if (three == "O" && seven == "O")
+					{
+						botChoice = 5;
+					}
+					if (three == "O" && five == "O")
+					{
+						botChoice = 7;
+					}
+					if (seven == "O" && five == "O")
+					{
+						botChoice = 3;
+					}
+
+				}
+			}
+
+			if (one == "X" && two == "X" && four == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (three == "O" && seven == "O")
+					{
+						botChoice = 5;
+					}
+					if (three == "O" && five == "O")
+					{
+						botChoice = 7;
+					}
+					if (seven == "O" && five == "O")
+					{
+						botChoice = 3;
+					}
+					if (seven == "O" && eight == "O")
+					{
+						botChoice = 9;
+					}
+					if (nine == "O" && eight == "O")
+					{
+						botChoice = 7;
+					}
+					if (nine == "O" && seven == "O")
+					{
+						botChoice = 8;
+					}
+					if (three == "O" && six == "O")
+					{
+						botChoice = 9;
+					}
+					if (three == "O" && nine == "O")
+					{
+						botChoice = 6;
+					}
+					if (nine == "O" && six == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+			if (four == "X" && seven == "X" && eight == "X")
+			{
+				if (one != "X" && one != "O")
+				{
+					botChoice = 1;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (three == "O" && six == "O")
+					{
+						botChoice = 9;
+					}
+					if (three == "O" && nine == "O")
+					{
+						botChoice = 6;
+					}
+					if (nine == "O" && six == "O")
+					{
+						botChoice = 3;
+					}
+					if (one == "O" && five == "O")
+					{
+						botChoice = 9;
+					}
+					if (five == "O" && nine == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && nine == "O")
+					{
+						botChoice = 5;
+					}
+					if (three == "O" && two == "O")
+					{
+						botChoice = 1;
+					}
+					if (three == "O" && one == "O")
+					{
+						botChoice = 2;
+					}
+					if (two == "O" && one == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+			if (three == "X" && two == "X" && nine == "X")
+			{
+				if (six != "X" && six != "O")
+				{
+					botChoice = 6;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (one == "O" && four == "O")
+					{
+						botChoice = 7;
+					}
+					if (four == "O" && seven == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && seven == "O")
+					{
+						botChoice = 4;
+					}
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+
+			if (one == "X" && three == "X" && six == "X")
+			{
+				if (nine != "X" && nine != "O")
+				{
+					botChoice = 9;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (seven == "O" && eight == "O")
+					{
+						botChoice = 9;
+					}
+					if (nine == "O" && eight == "O")
+					{
+						botChoice = 7;
+					}
+					if (nine == "O" && seven == "O")
+					{
+						botChoice = 8;
+					}
+				}
+			}
+
+			if (six == "X" && seven == "X" && nine == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (three == "O" && two == "O")
+					{
+						botChoice = 1;
+					}
+					if (three == "O" && one == "O")
+					{
+						botChoice = 2;
+					}
+					if (two == "O" && one == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+			if (three == "X" && eight == "X" && nine == "X")
+			{
+				if (seven != "X" && seven != "O")
+				{
+					botChoice = 7;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+					if (one == "O" && four == "O")
+					{
+						botChoice = 7;
+					}
+					if (four == "O" && seven == "O")
+					{
+						botChoice = 1;
+					}
+					if (one == "O" && seven == "O")
+					{
+						botChoice = 4;
+					}
+				}
+			}
+
+			if (one == "X" && seven == "X" && eight == "X")
+			{
+				if (four != "X" && four != "O")
+				{
+					botChoice = 4;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+					if (three == "O" && six == "O")
+					{
+						botChoice = 9;
+					}
+					if (three == "O" && nine == "O")
+					{
+						botChoice = 6;
+					}
+					if (nine == "O" && six == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+			if (four == "X" && seven == "X" && nine == "X")
+			{
+				if (eight != "X" && eight != "O")
+				{
+					botChoice = 8;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (three == "O" && two == "O")
+					{
+						botChoice = 1;
+					}
+					if (three == "O" && one == "O")
+					{
+						botChoice = 2;
+					}
+					if (two == "O" && one == "O")
+					{
+						botChoice = 3;
+					}
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+				}
+			}
+
+			if (one == "X" && three == "X" && four == "X")
+			{
+				if (seven != "X" && seven != "O")
+				{
+					botChoice = 7;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (two == "O" && eight == "O")
+					{
+						botChoice = 5;
+					}
+					if (two == "O" && five == "O")
+					{
+						botChoice = 8;
+					}
+					if (five == "O" && eight == "O")
+					{
+						botChoice = 2;
+					}
+					if (seven == "O" && eight == "O")
+					{
+						botChoice = 9;
+					}
+					if (nine == "O" && eight == "O")
+					{
+						botChoice = 7;
+					}
+					if (nine == "O" && seven == "O")
+					{
+						botChoice = 8;
+					}
+				}
+			}
+
+			if (one == "X" && seven == "X" && two == "X")
+			{
+				if (three != "X" && three != "O")
+				{
+					botChoice = 3;
+					isDefensive = true;
+					isMultiChoice = 2;
+					if (four == "O" && five == "O")
+					{
+						botChoice = 6;
+					}
+					if (four == "O" && six == "O")
+					{
+						botChoice = 5;
+					}
+					if (five == "O" && six == "O")
+					{
+						botChoice = 4;
+					}
+					if (three == "O" && six == "O")
+					{
+						botChoice = 9;
+					}
+					if (three == "O" && nine == "O")
+					{
+						botChoice = 6;
+					}
+					if (nine == "O" && six == "O")
+					{
+						botChoice = 3;
+					}
+				}
+			}
+
+
+			if (isMultiChoice != 2)
+			{
+				if (one == "X" && two == "X")
+				{
+					if (three != "X" && three != "O")
+					{
+						botChoice = 3;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+
+
+					}
+				}
+
+
+				if (one == "X" && three == "X")
+				{
+					if (two != "X" && two != "O")
+					{
+						botChoice = 2;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+
+					}
+				}
+
+
+
+				if (one == "X" && four == "X")
+				{
+					if (seven != "X" && seven != "O")
+					{
+						botChoice = 7;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+
+					}
+				}
+
+
+
+				if (one == "X" && five == "X")
+				{
+					if (nine != "X" && nine != "O")
+					{
+						botChoice = 9;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+
+					}
+				}
+
+				if (one == "X" && nine == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+
+					}
+
+				}
+
+
+				if (two == "X" && three == "X")
+				{
+					if (one != "X" && one != "O")
+					{
+						botChoice = 1;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+					}
+				}
+
+
+
+				if (two == "X" && five == "X")
+				{
+					if (eight != "X" && eight != "O")
+					{
+						botChoice = 8;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+					}
+				}
+
+
+				if (two == "X" && eight == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+
+					}
+				}
+
+
+
+
+				if (three == "X" && six == "X")
+				{
+					if (nine != "X" && nine != "O")
+					{
+						botChoice = 9;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+
+					}
+
+				}
+
+
+				if (three == "X" && five == "X")
+				{
+					if (seven != "X" && seven != "O")
+					{
+						botChoice = 7;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+					}
+				}
+
+
+				if (four == "X" && five == "X")
+				{
+					if (six != "X" && six != "O")
+					{
+						botChoice = 6;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+					}
+				}
+
+
+				if (four == "X" && six == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+					}
+				}
+
+
+				if (four == "X" && seven == "X")
+				{
+					if (one != "X" && one != "O")
+					{
+						botChoice = 1;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+					}
+				}
+
+				if (three == "X" && nine == "X")
+				{
+					if (six != "X" && six != "O")
+					{
+						botChoice = 6;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+					}
+				}
+
+
+				if (five == "X" && six == "X")
+				{
+					if (four != "X" && four != "O")
+					{
+						botChoice = 4;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (seven == "O" && eight == "O")
+						{
+							botChoice = 9;
+						}
+						if (nine == "O" && eight == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && nine == "O")
+						{
+							botChoice = 8;
+						}
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+					}
+				}
+
+
+
+
+
+				if (five == "X" && seven == "X")
+				{
+					if (three != "X" && three != "O")
+					{
+						botChoice = 3;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+					}
+				}
+
+
+				if (five == "X" && nine == "X")
+				{
+					if (one != "X" && one != "O")
+					{
+						botChoice = 1;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+					}
+				}
+
+
+				if (five == "X" && eight == "X")
+				{
+					if (two != "X" && two != "O")
+					{
+						botChoice = 2;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+					}
+				}
+
+
+				if (six == "X" && nine == "X")
+				{
+					if (three != "X" && three != "O")
+					{
+						botChoice = 3;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+					}
+
+				}
+
+
+				if (seven == "X" && eight == "X")
+				{
+					if (nine != "X" && nine != "O")
+					{
+						botChoice = 9;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+					}
+				}
+
+
+				if (three == "X" && seven == "X")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (one == "O" && five == "O")
+						{
+							botChoice = 9;
+						}
+						if (five == "O" && nine == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && nine == "O")
+						{
+							botChoice = 5;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+					}
+
+				}
+
+
+				if (eight == "X" && nine == "X")
+				{
+					if (seven != "X" && seven != "O")
+					{
+						botChoice = 7;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+						if (four == "O" && one == "O")
+						{
+							botChoice = 7;
+						}
+						if (four == "O" && seven == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && seven == "O")
+						{
+							botChoice = 4;
+						}
+						if (three == "O" && five == "O")
+						{
+							botChoice = 7;
+						}
+						if (seven == "O" && five == "O")
+						{
+							botChoice = 3;
+						}
+						if (three == "O" && seven == "O")
+						{
+							botChoice = 5;
+						}
+					}
+
+				}
+
+				if (one == "X" && seven == "X")
+				{
+					if (four != "X" && four != "O")
+					{
+						botChoice = 4;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && six == "O")
+						{
+							botChoice = 9;
+						}
+						if (three == "O" && nine == "O")
+						{
+							botChoice = 6;
+						}
+						if (nine == "O" && six == "O")
+						{
+							botChoice = 3;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+					}
+				}
+
+				if (seven == "X" && nine == "X")
+				{
+					if (eight != "X" && eight != "O")
+					{
+						botChoice = 8;
+						isDefensive = true;
+						isMultiChoice = 1;
+						if (two == "O" && eight == "O")
+						{
+							botChoice = 5;
+						}
+						if (two == "O" && five == "O")
+						{
+							botChoice = 8;
+						}
+						if (five == "O" && eight == "O")
+						{
+							botChoice = 2;
+						}
+						if (four == "O" && five == "O")
+						{
+							botChoice = 6;
+						}
+						if (four == "O" && six == "O")
+						{
+							botChoice = 5;
+						}
+						if (five == "O" && six == "O")
+						{
+							botChoice = 4;
+						}
+						if (three == "O" && one == "O")
+						{
+							botChoice = 2;
+						}
+						if (three == "O" && two == "O")
+						{
+							botChoice = 1;
+						}
+						if (one == "O" && two == "O")
+						{
+							botChoice = 3;
+						}
+					}
+				}
+
+			}
+
+
+			if (counter == 1 || isMultiChoice == 0)
+			{
+				A:
+				Random r = new Random();
+				botChoice = r.Next(1, 9);
+				isDefensive = true;
+				switch (botChoice)
+				{
+					case 1:
+						if (one == "X" || one == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 1;
+						}
+						break;
+					case 2:
+						if (two == "X" || two == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 2;
+						}
+						break;
+					case 3:
+						if (three == "X" || three == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 3;
+						}
+						break;
+					case 4:
+						if (four == "X" || four == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 4;
+						}
+						break;
+					case 5:
+						if (five == "X" || five == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 5;
+						}
+						break;
+					case 6:
+						if (six == "X" || six == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 6;
+						}
+						break;
+					case 7:
+						if (seven == "X" || seven == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 7;
+						}
+						break;
+					case 8:
+						if (eight == "X" || eight == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 8;
+						}
+						break;
+					case 9:
+						if (nine == "X" || nine == "O")
+						{
+							goto A;
+						}
+						else
+						{
+							botChoice = 9;
+						}
+						break;
+
+				}
+
+			}
+			if (isDefensive == false)
+			{
+				if (one == "O" && two == "O")
+				{
+					if (three != "X" && three != "O")
+					{
+						botChoice = 3;
+
+					}
+				}
+
+
+				if (one == "O" && three == "O")
+				{
+					if (two != "X" && two != "O")
+					{
+						botChoice = 2;
+
+					}
+				}
+
+
+
+				if (one == "O" && four == "O")
+				{
+					if (seven != "X" && seven != "O")
+					{
+						botChoice = 7;
+
+					}
+				}
+
+
+
+				if (one == "O" && five == "O")
+				{
+					if (nine != "X" && nine != "O")
+					{
+						botChoice = 9;
+
+					}
+				}
+
+				if (one == "O" && nine == "O")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+
+					}
+
+				}
+
+
+				if (two == "O" && three == "O")
+				{
+					if (one != "X" && one != "O")
+					{
+						botChoice = 1;
+
+					}
+				}
+
+
+
+				if (two == "O" && five == "O")
+				{
+					if (eight != "X" && eight != "O")
+					{
+						botChoice = 8;
+
+					}
+				}
+
+
+				if (two == "O" && eight == "O")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+
+					}
+				}
+
+
+
+
+				if (three == "O" && six == "O")
+				{
+					if (nine != "X" && nine != "O")
+					{
+						botChoice = 9;
+
+					}
+
+				}
+
+
+				if (three == "O" && five == "O")
+				{
+					if (seven != "X" && seven != "O")
+					{
+						botChoice = 7;
+
+					}
+				}
+
+
+				if (four == "O" && five == "O")
+				{
+					if (six != "X" && six != "O")
+					{
+						botChoice = 6;
+
+					}
+				}
+
+
+				if (four == "O" && six == "O")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+
+					}
+				}
+
+
+				if (four == "O" && seven == "O")
+				{
+					if (one != "X" && one != "O")
+					{
+						botChoice = 1;
+
+					}
+				}
+
+				if (three == "O" && nine == "O")
+				{
+					if (six != "X" && six != "O")
+					{
+						botChoice = 6;
+					}
+				}
+
+
+				if (five == "O" && six == "O")
+				{
+					if (four != "X" && four != "O")
+					{
+						botChoice = 4;
+
+					}
+				}
+
+
+
+
+
+				if (five == "O" && seven == "O")
+				{
+					if (three != "X" && three != "O")
+					{
+						botChoice = 3;
+
+					}
+				}
+
+
+				if (five == "O" && nine == "O")
+				{
+					if (one != "X" && one != "O")
+					{
+						botChoice = 1;
+
+					}
+				}
+
+
+				if (five == "O" && eight == "O")
+				{
+					if (two != "X" && two != "O")
+					{
+						botChoice = 2;
+
+					}
+				}
+
+
+				if (six == "O" && nine == "O")
+				{
+					if (three != "X" && three != "O")
+					{
+						botChoice = 3;
+
+					}
+
+				}
+
+
+				if (seven == "O" && eight == "O")
+				{
+					if (nine != "X" && nine != "O")
+					{
+						botChoice = 9;
+
+					}
+				}
+
+
+				if (three == "O" && seven == "O")
+				{
+					if (five != "X" && five != "O")
+					{
+						botChoice = 5;
+
+					}
+
+				}
+
+
+				if (eight == "O" && nine == "O")
+				{
+					if (seven != "X" && seven != "O")
+					{
+						botChoice = 7;
+
+					}
+
+				}
+
+				if (one == "O" && seven == "O")
+				{
+					if (four != "X" && four != "O")
+					{
+						botChoice = 4;
+					}
+				}
+
+				if (seven == "O" && nine == "O")
+				{
+					if (eight != "X" && eight != "O")
+					{
+						botChoice = 8;
+					}
+				}
+
+			}
+			return botChoice;
+		}
 
 
 		//variables
@@ -2301,14 +2300,29 @@ namespace Tic_Tac_Toe
 		static int wins;
 		static int totalGames;
 		static int userChoice;
+		static int MultiUserChoice;
+		static int MultiUser2Choice;
+		static int player1Wins;
+		static int player2Wins;
+		static int totalMultiGames;
 		static int botChoice;
 		static int counter;
-		static int isMultiChoice = 0;
+	    static int vs;
+		static int isMultiChoice;
 		static bool isDefensive = false;
-		//  static int vs;
 
 
 		static SoundPlayer MusicPlayer = new SoundPlayer((Properties.Resources.TheFatRat___Epic));
+
+		static void PlayMulti()
+		{
+			// this function will handle the multi-player option of the game...
+			Console.Clear();
+			DrawMultiUI();
+
+
+		}
+			
 
 		static void PlayMusic()
 		{
@@ -2423,6 +2437,11 @@ namespace Tic_Tac_Toe
 			
 		}
 
+		static void DrawMultiUI()
+		{
+
+		}
+
 		static void DrawUI()
 		{
 			//this function draws the board and instructs the user on how to play
@@ -2482,9 +2501,10 @@ namespace Tic_Tac_Toe
 				Thread.Sleep(150);
 				Console.WriteLine("Press any key to start the game!");
 				Console.ReadKey();
-				//  Console.WriteLine("");
-				//  Console.WriteLine("Type 0 to play vs the computer or 1 to play vs another player...");
-				/*     try
+				Console.Clear();
+		     	Console.WriteLine("");
+				Console.WriteLine("Type 0 to play vs the computer or 1 to play vs another player...");
+				     try
 					 {
 						 vs = int.Parse(Console.ReadLine());
 						 if (vs < 0 || vs > 1)
@@ -2505,9 +2525,15 @@ namespace Tic_Tac_Toe
 						 Thread.Sleep(2000);
 						 vs = 0;
 						 goto Main;
-					 }*/
+					 }
 
 				Console.Clear();
+
+				if(vs == 1)
+				{
+					PlayMulti();
+				}
+
 				UsersTurn:
 				{
 					Console.Clear();
@@ -2693,7 +2719,6 @@ namespace Tic_Tac_Toe
 					if (gameResult == true)
 					{
 
-
 						Thread.Sleep(2000);
 						if (UserOrPc == true)
 						{
@@ -2743,3 +2768,9 @@ namespace Tic_Tac_Toe
 		}
 	}
 }
+
+ 
+
+	
+
+
