@@ -2296,31 +2296,448 @@ namespace Tic_Tac_Toe
 		static string eight = "8";
 		static string nine = "9";
 		static bool gameResult = false;
+		static bool multiGameResult = false;
 		static bool UserOrPc = false; // false = User wins. true = PC wins.
 		static int wins;
 		static int totalGames;
 		static int userChoice;
-		static int MultiUserChoice;
-		static int MultiUser2Choice;
+		static int multiUserChoice;
+		static int multiUser2Choice;
 		static int player1Wins;
 		static int player2Wins;
 		static int totalMultiGames;
 		static int botChoice;
 		static int counter;
+		static int multiCounter;
 	    static int vs;
 		static int isMultiChoice;
 		static bool isDefensive = false;
+		static bool XorO = true; // true = X`s turn; false = O`s turn;
+		static bool isMultiModeOn = false;
 
-
+		static SpeechSynthesizer synth = new SpeechSynthesizer();
 		static SoundPlayer MusicPlayer = new SoundPlayer((Properties.Resources.TheFatRat___Epic));
 
 		static void PlayMulti()
 		{
 			// this function will handle the multi-player option of the game...
 			Console.Clear();
+
+			one = "1";
+			two = "2";
+			three = "3";
+			four = "4";
+			five = "5";
+			six = "6";
+			seven = "7";
+			eight = "8";
+			nine = "9";
+			vs = 1;
+			multiGameResult = false;
+			XorO = true;
+			multiCounter = 0;
+			multiUserChoice = 0;
+			multiUser2Choice = 0;
+
 			DrawMultiUI();
 
+			MultiUser1sTurn:
+			{
+				Console.Clear();
+				DrawMultiUI();
+				try
+				{
+					multiUserChoice = int.Parse(Console.ReadLine());
 
+					if (multiUserChoice < 1 || multiUserChoice > 9)
+					{
+						multiUserChoice = 0;
+						Console.Clear();
+						Console.WriteLine("Wrong.You must enter a number between 1 and 9");
+						Thread.Sleep(4000);
+						Console.Clear();
+						goto MultiUser1sTurn;
+
+					}
+					switch (multiUserChoice)
+					{
+
+						case 1:
+
+							if (one == "X" || one == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							one = "X";
+							break;
+						case 2:
+							if (two == "X" || two == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							two = "X";
+							break;
+						case 3:
+							if (three == "X" || three == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							three = "X";
+							break;
+						case 4:
+							if (four == "X" || four == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							four = "X";
+							break;
+						case 5:
+							if (five == "X" || five == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							five = "X";
+							break;
+						case 6:
+							if (six == "X" || six == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							six = "X";
+							break;
+						case 7:
+							if (seven == "X" || seven == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							seven = "X";
+							break;
+						case 8:
+							if (eight == "X" || eight == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							eight = "X";
+							break;
+						case 9:
+							if (nine == "X" || nine == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUserChoice = 0;
+								Console.Clear();
+								goto MultiUser1sTurn;
+							}
+							nine = "X";
+							break;
+					}
+
+				}
+				catch/* em all */(Exception)
+				{
+					Console.Clear();
+					Console.WriteLine("That`s not a number!");
+					Thread.Sleep(2000);
+					multiUserChoice = 0;
+					Console.Clear();
+					goto MultiUser1sTurn;
+
+
+				}
+				XorO = false;
+				CheckForWin();
+				if (multiGameResult == true)
+				{
+					Console.Clear();
+					DrawMultiUI();
+					Thread.Sleep(2000);
+					if (UserOrPc == true)
+					{
+						//Player 2 {O} wins
+						Console.Clear();
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.WriteLine("Player 2 {O} wins! Press any key to play again!");
+						synth.Speak("Player 2 wins!");
+						totalMultiGames++;
+						player2Wins++;
+						Console.ReadKey();
+						Console.Clear();
+						PlayMulti();
+					}
+					else
+					{
+						//Player 1 {X} wins
+						Console.Clear();
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.WriteLine("Player 1 {O} wins! Press any key to play again!");
+						synth.Speak("Player 1 wins!");
+						totalMultiGames++;
+						player1Wins++;
+						Console.ReadKey();
+						Console.Clear();
+						PlayMulti();
+					}
+
+				}
+
+				if (multiCounter == 4)
+				{  //draw. No one has won.
+					CheckForWin();
+					if (multiGameResult == false)
+					{
+						Console.Clear();
+						DrawMultiUI();
+						Console.Clear();
+						Console.WriteLine("Draw. Press any key to play again");
+						Console.ReadKey();
+						Console.Clear();
+						totalMultiGames++;
+						PlayMulti();
+					}
+					goto MultiUser1sTurn;
+				}
+			
+			}
+
+			MultiUser2sTurn:
+			{
+				Console.Clear();
+				DrawMultiUI();
+				try
+				{
+					multiUser2Choice = int.Parse(Console.ReadLine());
+
+					if (multiUser2Choice < 1 || multiUser2Choice > 9)
+					{
+						multiUser2Choice = 0;
+						Console.Clear();
+						Console.WriteLine("Wrong.You must enter a number between 1 and 9");
+						Thread.Sleep(4000);
+						Console.Clear();
+						goto MultiUser1sTurn;
+
+					}
+					switch (multiUser2Choice)
+					{
+
+						case 1:
+
+							if (one == "X" || one == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							one = "O";
+							break;
+						case 2:
+							if (two == "X" || two == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							two = "O";
+							break;
+						case 3:
+							if (three == "X" || three == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							three = "O";
+							break;
+						case 4:
+							if (four == "X" || four == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							four = "O";
+							break;
+						case 5:
+							if (five == "X" || five == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							five = "O";
+							break;
+						case 6:
+							if (six == "X" || six == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							six = "O";
+							break;
+						case 7:
+							if (seven == "X" || seven == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							seven = "O";
+							break;
+						case 8:
+							if (eight == "X" || eight == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							eight = "O";
+							break;
+						case 9:
+							if (nine == "X" || nine == "O")
+							{
+								Console.Clear();
+								Console.WriteLine("This slot is already taken. Choose another one.");
+								Thread.Sleep(4000);
+								multiUser2Choice = 0;
+								Console.Clear();
+								goto MultiUser2sTurn;
+							}
+							nine = "O";
+							break;
+					}
+
+				}
+				catch/* em all */(Exception)
+				{
+					Console.Clear();
+					Console.WriteLine("That`s not a number!");
+					Thread.Sleep(2000);
+					multiUser2Choice = 0;
+					Console.Clear();
+					goto MultiUser2sTurn;
+
+
+				}
+				multiCounter++;
+				CheckForWin();
+				XorO = true;
+
+			}
+
+			CheckForWin();
+
+			if (multiGameResult == true)
+			{
+				if (UserOrPc == true)
+				{
+					//Player 2 {O} wins
+					Console.Clear();
+					Console.ForegroundColor = ConsoleColor.Red;
+					Console.WriteLine("Player 2 {O} wins! Press any key to play again!");
+					synth.Speak("Player 2 wins!");
+					totalMultiGames++;
+					player2Wins++;
+					Console.ReadKey();
+					Console.Clear();
+					PlayMulti();
+				}
+				else
+				{
+					//Player 1 {X} wins
+					Console.Clear();
+					Console.ForegroundColor = ConsoleColor.Red;
+					Console.WriteLine("Player 1 {O} wins! Press any key to play again!");
+					synth.Speak("Player 1 wins!");
+					totalMultiGames++;
+					player1Wins++;
+					Console.ReadKey();
+					Console.Clear();
+					PlayMulti();
+				}
+
+			}
+
+			if (multiCounter == 4)
+			{  //draw. No one has won.
+				CheckForWin();
+				if (multiGameResult == false)
+				{
+					Thread.Sleep(2000);
+					Console.Clear();
+					Console.WriteLine("Draw. Press any key to play again");
+					Console.ReadKey();
+					Console.Clear();
+					totalMultiGames++;
+					PlayMulti();
+				}
+			}
+			goto MultiUser1sTurn;
 		}
 			
 
@@ -2340,48 +2757,62 @@ namespace Tic_Tac_Toe
 			if (one == "X" && two == "X" && three == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
-
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (four == "X" && five == "X" && six == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (seven == "X" && eight == "X" && nine == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (one == "X" && four == "X" && seven == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (two == "X" && five == "X" && eight == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (three == "X" && six == "X" && nine == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (one == "X" && five == "X" && nine == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 			if (seven == "X" && five == "X" && three == "X")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = true;
 			}
 
 			if (gameResult == true)
 			{
-
 				return;
 			}
 
@@ -2389,56 +2820,94 @@ namespace Tic_Tac_Toe
 			if (one == "O" && two == "O" && three == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			if (four == "O" && five == "O" && six == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			if (seven == "O" && eight == "O" && nine == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
+				XorO = false;
 				UserOrPc = true;
 			}
 			if (one == "O" && four == "O" && seven == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			if (two == "O" && five == "O" && eight == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			if (three == "O" && six == "O" && nine == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			if (one == "O" && five == "O" && nine == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			if (seven == "O" && five == "O" && three == "O")
 			{
 				var color = Console.ForegroundColor;
-				gameResult = true;
+				if (!isMultiModeOn) gameResult = true;
+				else multiGameResult = true;
 				UserOrPc = true;
+				XorO = false;
 			}
 			
 		}
 
 		static void DrawMultiUI()
 		{
+			//this function draws the multiplayer playing board and instructs the user on how to play
+
+			Console.ForegroundColor = ConsoleColor.White;
+			Console.WriteLine("Games Played:" + totalMultiGames);
+			Console.WriteLine("Player 1 {X} has:" + player1Wins + " wins");
+			Console.WriteLine("Player 2 {O} has:" + player2Wins + " wins");
+			Console.ForegroundColor = ConsoleColor.Yellow;
+			Console.WriteLine("                    ┌─────┐");
+			Console.WriteLine("                    │" + one + "│" + two + "│" + three + "│");
+			Console.WriteLine("                    │" + four + "│" + five + "│" + six + "│");
+			Console.WriteLine("                    │" + seven + "│" + eight + "│" + nine + "│");
+			Console.WriteLine("                    └─────┘");
+			Console.WriteLine("");
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			if(XorO == true)
+			{
+				Console.WriteLine("To play type the number you want to change to X and hit enter.");
+			}
+			else
+			{
+				Console.WriteLine("To play type the number you want to change to O and hit enter.");
+			}
 
 		}
 
@@ -2461,7 +2930,6 @@ namespace Tic_Tac_Toe
 		static void Main()
 		{
 			Console.Title = "Tic Tac Toe";
-			SpeechSynthesizer synth = new SpeechSynthesizer();
 			Random r = new Random();
 			Thread MusicWorker = new Thread(PlayMusic);
 			MusicWorker.Start();
@@ -2485,7 +2953,7 @@ namespace Tic_Tac_Toe
 				seven = "7";
 				eight = "8";
 				nine = "9";
-				// vs = 0;
+			    vs = 0;
 				userChoice = 0;
 				counter = 0;
 				isMultiChoice = 0;
@@ -2531,7 +2999,12 @@ namespace Tic_Tac_Toe
 
 				if(vs == 1)
 				{
+					isMultiModeOn = true;
 					PlayMulti();
+				}
+				else
+				{
+					isMultiModeOn = false;
 				}
 
 				UsersTurn:
