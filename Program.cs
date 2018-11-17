@@ -2374,6 +2374,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							one = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 2:
 							if (two == "X" || two == "O")
@@ -2386,6 +2388,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							two = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 3:
 							if (three == "X" || three == "O")
@@ -2398,6 +2402,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							three = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 4:
 							if (four == "X" || four == "O")
@@ -2410,6 +2416,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							four = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 5:
 							if (five == "X" || five == "O")
@@ -2422,6 +2430,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							five = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 6:
 							if (six == "X" || six == "O")
@@ -2434,6 +2444,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							six = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 7:
 							if (seven == "X" || seven == "O")
@@ -2446,6 +2458,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							seven = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 8:
 							if (eight == "X" || eight == "O")
@@ -2458,6 +2472,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							eight = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 						case 9:
 							if (nine == "X" || nine == "O")
@@ -2470,6 +2486,8 @@ namespace Tic_Tac_Toe
 								goto MultiUser1sTurn;
 							}
 							nine = "X";
+							Console.Beep(900, 150);
+							Console.Beep(900, 150);
 							break;
 					}
 
@@ -2492,13 +2510,16 @@ namespace Tic_Tac_Toe
 					Console.Clear();
 					DrawMultiUI();
 					Thread.Sleep(2000);
-					if (UserOrPc == true)
+					if (XorO == false)
 					{
 						//Player 2 {O} wins
 						Console.Clear();
+						DrawMultiUI();
+						Thread.Sleep(2000);
+						Console.Clear();
 						Console.ForegroundColor = ConsoleColor.Red;
-						Console.WriteLine("Player 2 {O} wins! Press any key to play again!");
-						synth.Speak("Player 2 wins!");
+						Console.WriteLine("Player 2 [O] wins! Press any key to play again!");
+						synth.Speak("Player 2 wins! Press any key to play again");
 						totalMultiGames++;
 						player2Wins++;
 						Console.ReadKey();
@@ -2510,8 +2531,8 @@ namespace Tic_Tac_Toe
 						//Player 1 {X} wins
 						Console.Clear();
 						Console.ForegroundColor = ConsoleColor.Red;
-						Console.WriteLine("Player 1 {O} wins! Press any key to play again!");
-						synth.Speak("Player 1 wins!");
+						Console.WriteLine("Player 1 [X] wins! Press any key to play again!");
+						synth.Speak("Player 1 wins! Press any key to play again");
 						totalMultiGames++;
 						player1Wins++;
 						Console.ReadKey();
@@ -2573,6 +2594,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							one = "O";
+							Console.Beep(448, 300);
 							break;
 						case 2:
 							if (two == "X" || two == "O")
@@ -2585,6 +2607,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							two = "O";
+							Console.Beep(448, 300);
 							break;
 						case 3:
 							if (three == "X" || three == "O")
@@ -2597,6 +2620,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							three = "O";
+							Console.Beep(448, 300);
 							break;
 						case 4:
 							if (four == "X" || four == "O")
@@ -2609,6 +2633,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							four = "O";
+							Console.Beep(448, 300);
 							break;
 						case 5:
 							if (five == "X" || five == "O")
@@ -2621,6 +2646,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							five = "O";
+							Console.Beep(448, 300);
 							break;
 						case 6:
 							if (six == "X" || six == "O")
@@ -2633,6 +2659,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							six = "O";
+							Console.Beep(448, 300);
 							break;
 						case 7:
 							if (seven == "X" || seven == "O")
@@ -2645,6 +2672,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							seven = "O";
+							Console.Beep(448, 300);
 							break;
 						case 8:
 							if (eight == "X" || eight == "O")
@@ -2657,6 +2685,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							eight = "O";
+							Console.Beep(448, 300);
 							break;
 						case 9:
 							if (nine == "X" || nine == "O")
@@ -2669,6 +2698,7 @@ namespace Tic_Tac_Toe
 								goto MultiUser2sTurn;
 							}
 							nine = "O";
+							Console.Beep(448, 300);
 							break;
 					}
 
@@ -2694,13 +2724,16 @@ namespace Tic_Tac_Toe
 
 			if (multiGameResult == true)
 			{
-				if (UserOrPc == true)
+				if (XorO == false) 
 				{
 					//Player 2 {O} wins
 					Console.Clear();
+					DrawMultiUI();
+					Thread.Sleep(2000);
+					Console.Clear();
 					Console.ForegroundColor = ConsoleColor.Red;
-					Console.WriteLine("Player 2 {O} wins! Press any key to play again!");
-					synth.Speak("Player 2 wins!");
+					Console.WriteLine("Player 2 [O] wins! Press any key to play again!");
+					synth.Speak("Player 2 wins! Press any key to play again");
 					totalMultiGames++;
 					player2Wins++;
 					Console.ReadKey();
@@ -2712,8 +2745,8 @@ namespace Tic_Tac_Toe
 					//Player 1 {X} wins
 					Console.Clear();
 					Console.ForegroundColor = ConsoleColor.Red;
-					Console.WriteLine("Player 1 {O} wins! Press any key to play again!");
-					synth.Speak("Player 1 wins!");
+					Console.WriteLine("Player 1 [X] wins! Press any key to play again!");
+					synth.Speak("Player 1 wins! Press any key to play again");
 					totalMultiGames++;
 					player1Wins++;
 					Console.ReadKey();
@@ -2731,6 +2764,7 @@ namespace Tic_Tac_Toe
 					Thread.Sleep(2000);
 					Console.Clear();
 					Console.WriteLine("Draw. Press any key to play again");
+					synth.Speak("DRAW!");
 					Console.ReadKey();
 					Console.Clear();
 					totalMultiGames++;
@@ -2760,6 +2794,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (four == "X" && five == "X" && six == "X")
 			{
@@ -2767,6 +2802,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (seven == "X" && eight == "X" && nine == "X")
 			{
@@ -2774,6 +2810,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (one == "X" && four == "X" && seven == "X")
 			{
@@ -2781,6 +2818,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (two == "X" && five == "X" && eight == "X")
 			{
@@ -2788,6 +2826,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (three == "X" && six == "X" && nine == "X")
 			{
@@ -2795,6 +2834,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (one == "X" && five == "X" && nine == "X")
 			{
@@ -2802,6 +2842,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 			if (seven == "X" && five == "X" && three == "X")
 			{
@@ -2809,6 +2850,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				return;
 			}
 
 			if (gameResult == true)
@@ -2824,6 +2866,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			if (four == "O" && five == "O" && six == "O")
 			{
@@ -2832,6 +2875,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			if (seven == "O" && eight == "O" && nine == "O")
 			{
@@ -2840,6 +2884,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				XorO = false;
 				UserOrPc = true;
+				return;
 			}
 			if (one == "O" && four == "O" && seven == "O")
 			{
@@ -2848,6 +2893,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			if (two == "O" && five == "O" && eight == "O")
 			{
@@ -2856,6 +2902,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			if (three == "O" && six == "O" && nine == "O")
 			{
@@ -2864,6 +2911,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			if (one == "O" && five == "O" && nine == "O")
 			{
@@ -2872,6 +2920,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			if (seven == "O" && five == "O" && three == "O")
 			{
@@ -2880,6 +2929,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				return;
 			}
 			
 		}
@@ -2890,8 +2940,8 @@ namespace Tic_Tac_Toe
 
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.WriteLine("Games Played:" + totalMultiGames);
-			Console.WriteLine("Player 1 {X} has:" + player1Wins + " wins");
-			Console.WriteLine("Player 2 {O} has:" + player2Wins + " wins");
+			Console.WriteLine("Player 1 [X] has:" + player1Wins + " wins");
+			Console.WriteLine("Player 2 [O] has:" + player2Wins + " wins");
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.WriteLine("                    ┌─────┐");
 			Console.WriteLine("                    │" + one + "│" + two + "│" + three + "│");
@@ -2903,10 +2953,26 @@ namespace Tic_Tac_Toe
 			if(XorO == true)
 			{
 				Console.WriteLine("To play type the number you want to change to X and hit enter.");
+				var color = Console.ForegroundColor;
+				Console.ForegroundColor = ConsoleColor.DarkGreen;
+				for (int i = 0; i < 5; i++)
+				{
+					Console.WriteLine("");
+				}
+				Console.WriteLine("PLAYER 1`S TURN...");
+				Console.ForegroundColor = color;
 			}
 			else
 			{
 				Console.WriteLine("To play type the number you want to change to O and hit enter.");
+				var color = Console.ForegroundColor;
+				Console.ForegroundColor = ConsoleColor.Cyan;
+				for (int i = 0; i < 5; i++)
+				{
+					Console.WriteLine("");
+				}
+				Console.WriteLine("PLAYER 2`S TURN...");
+				Console.ForegroundColor = color;
 			}
 
 		}
@@ -2933,12 +2999,6 @@ namespace Tic_Tac_Toe
 			Random r = new Random();
 			Thread MusicWorker = new Thread(PlayMusic);
 			MusicWorker.Start();
-
-			/*	for (int i = 1; i < 56; i++)
-				{
-					Console.SetWindowSize(i, i);
-					Thread.Sleep(6);
-				}*/
 			Console.SetWindowSize(65, 20);
 
 			Main:
@@ -2962,13 +3022,14 @@ namespace Tic_Tac_Toe
 				UserOrPc = false;
 
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine("Tic Tac Toe v1.1 by Kalin Lalov and Miro K.");
+				Console.WriteLine("Tic Tac Toe v2.0 by Kalin Lalov and Miro K.");
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.WriteLine("-------------------------------------------------------");
 				Console.ForegroundColor = ConsoleColor.Green;
 				Thread.Sleep(150);
 				Console.WriteLine("Press any key to start the game!");
 				Console.ReadKey();
+				VSchoice:
 				Console.Clear();
 		     	Console.WriteLine("");
 				Console.WriteLine("Type 0 to play vs the computer or 1 to play vs another player...");
@@ -2980,9 +3041,9 @@ namespace Tic_Tac_Toe
 							 vs = 0;
 							 Console.Clear();
 							 Console.WriteLine("The specified value is incorrect. Type either 0 or 1");
-							 Thread.Sleep(2500);
+							 Thread.Sleep(3500);
 							 Console.Clear();
-							 goto Main;
+							 goto VSchoice;
 
 						 }
 					 }
@@ -3019,7 +3080,7 @@ namespace Tic_Tac_Toe
 						{
 							userChoice = 0;
 							Console.Clear();
-							Console.WriteLine("Wrong.You must enter a number between 1 and 9");
+							Console.WriteLine("Wrong. You must enter a number between 1 and 9");
 							Thread.Sleep(4000);
 							Console.Clear();
 							goto UsersTurn;
