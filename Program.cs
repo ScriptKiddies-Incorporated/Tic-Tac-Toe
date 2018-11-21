@@ -3360,7 +3360,7 @@ namespace Tic_Tac_Toe
 			}
 
 
-			if (counter == 1 || isMultiChoice == 0)
+			if (counter == 1 || (isMultiChoice == 0 && counter==2) || (isMultiChoice == 0 && counter == 3))
 			{
 				A:
 				Random r = new Random();
