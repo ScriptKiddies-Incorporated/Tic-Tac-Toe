@@ -12,20 +12,21 @@ namespace Tic_Tac_Toe
 {
 	class Program
 	{
-		static int GetBotChoice()
+		static int GetBestBotChoice()
 		{
+			int choice = 0;
 			if (one == "X" && seven == "X" && nine == "X")
 			{
 				if (four != "X" && four != "O")
 				{
-					botChoice = 4;
+					choice = 4;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -33,7 +34,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -41,7 +42,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -49,7 +50,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -57,7 +58,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -65,7 +66,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -76,14 +77,14 @@ namespace Tic_Tac_Toe
 			{
 				if (two != "X" && two != "O")
 				{
-					botChoice = 2;
+					choice = 2;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -91,7 +92,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -99,7 +100,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -107,7 +108,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -115,7 +116,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -123,7 +124,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -134,14 +135,14 @@ namespace Tic_Tac_Toe
 			{
 				if (four != "X" && four != "O")
 				{
-					botChoice = 4;
+					choice = 4;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -149,7 +150,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -157,7 +158,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -165,7 +166,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -173,7 +174,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -181,7 +182,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -192,14 +193,14 @@ namespace Tic_Tac_Toe
 			{
 				if (six != "X" && six != "O")
 				{
-					botChoice = 6;
+					choice = 6;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -207,7 +208,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -215,7 +216,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -223,7 +224,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -231,7 +232,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -239,7 +240,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -250,14 +251,14 @@ namespace Tic_Tac_Toe
 			{
 				if (nine != "X" && nine != "O")
 				{
-					botChoice = 9;
+					choice = 9;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (three == "O" && six == "O")
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -265,7 +266,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -273,7 +274,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -284,14 +285,14 @@ namespace Tic_Tac_Toe
 			{
 				if (seven != "X" && seven != "O")
 				{
-					botChoice = 7;
+					choice = 7;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (one == "O" && four == "O")
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -299,7 +300,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -307,7 +308,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -318,14 +319,14 @@ namespace Tic_Tac_Toe
 			{
 				if (nine != "X" && nine != "O")
 				{
-					botChoice = 9;
+					choice = 9;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (seven == "O" && eight == "O")
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -333,7 +334,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -341,7 +342,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -352,14 +353,14 @@ namespace Tic_Tac_Toe
 			{
 				if (three != "X" && three != "O")
 				{
-					botChoice = 3;
+					choice = 3;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (three == "O" && two == "O")
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -367,7 +368,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -375,7 +376,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -387,14 +388,14 @@ namespace Tic_Tac_Toe
 			{
 				if (one != "X" && one != "O")
 				{
-					botChoice = 1;
+					choice = 1;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (seven == "O" && eight == "O")
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -402,7 +403,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -410,7 +411,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -418,7 +419,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -426,7 +427,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -434,7 +435,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -442,7 +443,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -450,7 +451,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -458,7 +459,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -469,14 +470,14 @@ namespace Tic_Tac_Toe
 			{
 				if (three != "X" && three != "O")
 				{
-					botChoice = 3;
+					choice = 3;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (one == "O" && four == "O")
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -484,7 +485,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -492,7 +493,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -500,7 +501,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -508,7 +509,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -516,7 +517,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -524,7 +525,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -532,7 +533,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -540,7 +541,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -552,14 +553,14 @@ namespace Tic_Tac_Toe
 			{
 				if (three != "X" && three != "O")
 				{
-					botChoice = 3;
+					choice = 3;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (three == "O" && seven == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -567,7 +568,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -575,7 +576,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -583,7 +584,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -591,7 +592,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -599,7 +600,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -607,7 +608,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -615,7 +616,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -623,7 +624,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -634,14 +635,14 @@ namespace Tic_Tac_Toe
 			{
 				if (one != "X" && one != "O")
 				{
-					botChoice = 1;
+					choice = 1;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (three == "O" && six == "O")
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -649,7 +650,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -657,7 +658,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -665,7 +666,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -673,7 +674,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -681,7 +682,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -690,7 +691,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -698,7 +699,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -706,7 +707,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -717,14 +718,14 @@ namespace Tic_Tac_Toe
 			{
 				if (six != "X" && six != "O")
 				{
-					botChoice = 6;
+					choice = 6;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (one == "O" && four == "O")
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -732,7 +733,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -740,7 +741,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -748,7 +749,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -756,7 +757,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -764,7 +765,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -776,14 +777,14 @@ namespace Tic_Tac_Toe
 			{
 				if (nine != "X" && nine != "O")
 				{
-					botChoice = 9;
+					choice = 9;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -791,7 +792,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -799,7 +800,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -807,7 +808,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -815,7 +816,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -823,7 +824,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -834,14 +835,14 @@ namespace Tic_Tac_Toe
 			{
 				if (three != "X" && three != "O")
 				{
-					botChoice = 3;
+					choice = 3;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -849,7 +850,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -857,7 +858,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -865,7 +866,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -873,7 +874,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -881,7 +882,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -892,14 +893,14 @@ namespace Tic_Tac_Toe
 			{
 				if (seven != "X" && seven != "O")
 				{
-					botChoice = 7;
+					choice = 7;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (four == "O" && five == "O")
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -907,7 +908,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -915,7 +916,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -923,7 +924,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -931,7 +932,7 @@ namespace Tic_Tac_Toe
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -939,7 +940,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -950,14 +951,14 @@ namespace Tic_Tac_Toe
 			{
 				if (four != "X" && four != "O")
 				{
-					botChoice = 4;
+					choice = 4;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (four == "O" && five == "O")
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -965,7 +966,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -973,7 +974,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -981,7 +982,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -989,7 +990,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -997,7 +998,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -1008,14 +1009,14 @@ namespace Tic_Tac_Toe
 			{
 				if (eight != "X" && eight != "O")
 				{
-					botChoice = 8;
+					choice = 8;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (three == "O" && two == "O")
 					{
 						if (one != "O" && one != "X")
 						{
-							botChoice = 1;
+							choice = 1;
 							isMultiChoice = 3;
 						}
 					}
@@ -1023,7 +1024,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -1031,7 +1032,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -1039,7 +1040,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -1047,7 +1048,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -1055,7 +1056,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -1066,14 +1067,14 @@ namespace Tic_Tac_Toe
 			{
 				if (seven != "X" && seven != "O")
 				{
-					botChoice = 7;
+					choice = 7;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (two == "O" && eight == "O")
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -1081,7 +1082,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -1089,7 +1090,7 @@ namespace Tic_Tac_Toe
 					{
 						if (two != "O" && two != "X")
 						{
-							botChoice = 2;
+							choice = 2;
 							isMultiChoice = 3;
 						}
 					}
@@ -1097,7 +1098,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -1105,7 +1106,7 @@ namespace Tic_Tac_Toe
 					{
 						if (seven != "O" && seven != "X")
 						{
-							botChoice = 7;
+							choice = 7;
 							isMultiChoice = 3;
 						}
 					}
@@ -1113,7 +1114,7 @@ namespace Tic_Tac_Toe
 					{
 						if (eight != "O" && eight != "X")
 						{
-							botChoice = 8;
+							choice = 8;
 							isMultiChoice = 3;
 						}
 					}
@@ -1124,14 +1125,14 @@ namespace Tic_Tac_Toe
 			{
 				if (three != "X" && three != "O")
 				{
-					botChoice = 3;
+					choice = 3;
 					isDefensive = true;
 					isMultiChoice = 2;
 					if (four == "O" && five == "O")
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -1139,7 +1140,7 @@ namespace Tic_Tac_Toe
 					{
 						if (five != "O" && five != "X")
 						{
-							botChoice = 5;
+							choice = 5;
 							isMultiChoice = 3;
 						}
 					}
@@ -1147,7 +1148,7 @@ namespace Tic_Tac_Toe
 					{
 						if (four != "O" && four != "X")
 						{
-							botChoice = 4;
+							choice = 4;
 							isMultiChoice = 3;
 						}
 					}
@@ -1155,7 +1156,7 @@ namespace Tic_Tac_Toe
 					{
 						if (nine != "O" && nine != "X")
 						{
-							botChoice = 9;
+							choice = 9;
 							isMultiChoice = 3;
 						}
 					}
@@ -1163,7 +1164,7 @@ namespace Tic_Tac_Toe
 					{
 						if (six != "O" && six != "X")
 						{
-							botChoice = 6;
+							choice = 6;
 							isMultiChoice = 3;
 						}
 					}
@@ -1171,7 +1172,7 @@ namespace Tic_Tac_Toe
 					{
 						if (three != "O" && three != "X")
 						{
-							botChoice = 3;
+							choice = 3;
 							isMultiChoice = 3;
 						}
 					}
@@ -1185,14 +1186,14 @@ namespace Tic_Tac_Toe
 				{
 					if (three != "X" && three != "O")
 					{
-						botChoice = 3;
+						choice = 3;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && six == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1200,7 +1201,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1208,7 +1209,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1216,7 +1217,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1224,7 +1225,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1232,7 +1233,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1240,7 +1241,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1248,7 +1249,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1256,7 +1257,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1264,7 +1265,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1272,7 +1273,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1280,7 +1281,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1294,14 +1295,14 @@ namespace Tic_Tac_Toe
 				{
 					if (two != "X" && two != "O")
 					{
-						botChoice = 2;
+						choice = 2;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (two == "O" && eight == "O")
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1309,7 +1310,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1317,7 +1318,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -1325,7 +1326,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1333,7 +1334,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1341,7 +1342,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1349,7 +1350,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1357,7 +1358,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1365,7 +1366,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1379,14 +1380,14 @@ namespace Tic_Tac_Toe
 				{
 					if (seven != "X" && seven != "O")
 					{
-						botChoice = 7;
+						choice = 7;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && five == "O")
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1394,7 +1395,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1402,7 +1403,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1410,7 +1411,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1418,7 +1419,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1426,7 +1427,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1434,7 +1435,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1442,7 +1443,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1450,7 +1451,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1458,7 +1459,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1466,7 +1467,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1474,7 +1475,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -1488,14 +1489,14 @@ namespace Tic_Tac_Toe
 				{
 					if (nine != "X" && nine != "O")
 					{
-						botChoice = 9;
+						choice = 9;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (seven == "O" && eight == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1503,7 +1504,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1511,7 +1512,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1519,7 +1520,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1527,7 +1528,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1535,7 +1536,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1547,14 +1548,14 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && five == "O")
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1562,7 +1563,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1570,7 +1571,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1578,7 +1579,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1586,7 +1587,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1594,7 +1595,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -1602,7 +1603,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1610,7 +1611,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1618,7 +1619,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1632,14 +1633,14 @@ namespace Tic_Tac_Toe
 				{
 					if (one != "X" && one != "O")
 					{
-						botChoice = 1;
+						choice = 1;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (seven == "O" && eight == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1647,7 +1648,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1655,7 +1656,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1663,7 +1664,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1671,7 +1672,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1679,7 +1680,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1687,7 +1688,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1695,7 +1696,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -1703,7 +1704,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1711,7 +1712,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1719,7 +1720,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -1727,7 +1728,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1740,14 +1741,14 @@ namespace Tic_Tac_Toe
 				{
 					if (eight != "X" && eight != "O")
 					{
-						botChoice = 8;
+						choice = 8;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (four == "O" && one == "O")
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1755,7 +1756,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -1763,7 +1764,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1771,7 +1772,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1779,7 +1780,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1787,7 +1788,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -1795,7 +1796,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1803,7 +1804,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1811,7 +1812,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1823,14 +1824,14 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && six == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1838,7 +1839,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1846,7 +1847,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1854,7 +1855,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1862,7 +1863,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -1870,7 +1871,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1878,7 +1879,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -1886,7 +1887,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -1894,7 +1895,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1902,7 +1903,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1910,7 +1911,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -1918,7 +1919,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1926,7 +1927,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1934,7 +1935,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -1942,7 +1943,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1957,14 +1958,14 @@ namespace Tic_Tac_Toe
 				{
 					if (nine != "X" && nine != "O")
 					{
-						botChoice = 9;
+						choice = 9;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (one == "O" && five == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -1972,7 +1973,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -1980,7 +1981,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -1988,7 +1989,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -1996,7 +1997,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2004,7 +2005,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2012,7 +2013,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2020,7 +2021,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2028,7 +2029,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2036,7 +2037,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2044,7 +2045,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2052,7 +2053,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2066,14 +2067,14 @@ namespace Tic_Tac_Toe
 				{
 					if (seven != "X" && seven != "O")
 					{
-						botChoice = 7;
+						choice = 7;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (seven == "O" && eight == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2081,7 +2082,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2089,7 +2090,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2097,7 +2098,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2105,7 +2106,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2113,7 +2114,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2125,14 +2126,14 @@ namespace Tic_Tac_Toe
 				{
 					if (six != "X" && six != "O")
 					{
-						botChoice = 6;
+						choice = 6;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (seven == "O" && eight == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2140,7 +2141,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2148,7 +2149,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2156,7 +2157,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2164,7 +2165,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2172,7 +2173,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2180,7 +2181,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2188,7 +2189,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2196,7 +2197,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2208,14 +2209,14 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && one == "O")
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2223,7 +2224,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2231,7 +2232,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2239,7 +2240,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2247,7 +2248,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2255,7 +2256,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2263,7 +2264,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2271,7 +2272,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2279,7 +2280,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2287,7 +2288,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2295,7 +2296,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2303,7 +2304,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2311,7 +2312,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2319,7 +2320,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2327,7 +2328,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2339,14 +2340,14 @@ namespace Tic_Tac_Toe
 				{
 					if (one != "X" && one != "O")
 					{
-						botChoice = 1;
+						choice = 1;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (one == "O" && five == "O")
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2354,7 +2355,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2362,7 +2363,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2370,7 +2371,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2378,7 +2379,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2386,7 +2387,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2394,7 +2395,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2402,7 +2403,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2410,7 +2411,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2421,14 +2422,14 @@ namespace Tic_Tac_Toe
 				{
 					if (six != "X" && six != "O")
 					{
-						botChoice = 6;
+						choice = 6;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (two == "O" && eight == "O")
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2436,7 +2437,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2444,7 +2445,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2452,7 +2453,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2460,7 +2461,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2468,7 +2469,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2476,7 +2477,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2484,7 +2485,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2492,7 +2493,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2504,14 +2505,14 @@ namespace Tic_Tac_Toe
 				{
 					if (four != "X" && four != "O")
 					{
-						botChoice = 4;
+						choice = 4;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (four == "O" && one == "O")
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2519,7 +2520,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2527,7 +2528,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2535,7 +2536,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2543,7 +2544,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2551,7 +2552,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2559,7 +2560,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2567,7 +2568,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2575,7 +2576,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2590,14 +2591,14 @@ namespace Tic_Tac_Toe
 				{
 					if (three != "X" && three != "O")
 					{
-						botChoice = 3;
+						choice = 3;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && one == "O")
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2605,7 +2606,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2613,7 +2614,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2621,7 +2622,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2629,7 +2630,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2637,7 +2638,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2649,14 +2650,14 @@ namespace Tic_Tac_Toe
 				{
 					if (one != "X" && one != "O")
 					{
-						botChoice = 1;
+						choice = 1;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && one == "O")
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2664,7 +2665,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2672,7 +2673,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2680,7 +2681,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2688,7 +2689,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2696,7 +2697,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2708,14 +2709,14 @@ namespace Tic_Tac_Toe
 				{
 					if (two != "X" && two != "O")
 					{
-						botChoice = 2;
+						choice = 2;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (four == "O" && one == "O")
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2723,7 +2724,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2731,7 +2732,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2739,7 +2740,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2747,7 +2748,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2755,7 +2756,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2763,7 +2764,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2771,7 +2772,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2779,7 +2780,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2791,14 +2792,14 @@ namespace Tic_Tac_Toe
 				{
 					if (three != "X" && three != "O")
 					{
-						botChoice = 3;
+						choice = 3;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (four == "O" && one == "O")
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2806,7 +2807,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2814,7 +2815,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2822,7 +2823,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2830,7 +2831,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2838,7 +2839,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2846,7 +2847,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2854,7 +2855,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -2862,7 +2863,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2870,7 +2871,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -2878,7 +2879,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2886,7 +2887,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2899,14 +2900,14 @@ namespace Tic_Tac_Toe
 				{
 					if (nine != "X" && nine != "O")
 					{
-						botChoice = 9;
+						choice = 9;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (three == "O" && one == "O")
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -2914,7 +2915,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2922,7 +2923,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2930,7 +2931,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2938,7 +2939,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2946,7 +2947,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -2954,7 +2955,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -2962,7 +2963,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -2970,7 +2971,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -2978,7 +2979,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -2986,7 +2987,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -2994,7 +2995,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3006,14 +3007,14 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (two == "O" && eight == "O")
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3021,7 +3022,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -3029,7 +3030,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -3037,7 +3038,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -3045,7 +3046,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -3053,7 +3054,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3061,7 +3062,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -3069,7 +3070,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3077,7 +3078,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -3090,14 +3091,14 @@ namespace Tic_Tac_Toe
 				{
 					if (seven != "X" && seven != "O")
 					{
-						botChoice = 7;
+						choice = 7;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (four == "O" && five == "O")
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -3105,7 +3106,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3113,7 +3114,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -3121,7 +3122,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -3129,7 +3130,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -3137,7 +3138,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -3145,7 +3146,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -3153,7 +3154,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -3161,7 +3162,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -3169,7 +3170,7 @@ namespace Tic_Tac_Toe
 						{
 							if (seven != "O" && seven != "X")
 							{
-								botChoice = 7;
+								choice = 7;
 								isMultiChoice = 3;
 							}
 						}
@@ -3177,7 +3178,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -3185,7 +3186,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3197,14 +3198,14 @@ namespace Tic_Tac_Toe
 				{
 					if (four != "X" && four != "O")
 					{
-						botChoice = 4;
+						choice = 4;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (two == "O" && eight == "O")
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3212,7 +3213,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -3220,7 +3221,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -3228,7 +3229,7 @@ namespace Tic_Tac_Toe
 						{
 							if (nine != "O" && nine != "X")
 							{
-								botChoice = 9;
+								choice = 9;
 								isMultiChoice = 3;
 							}
 						}
@@ -3236,7 +3237,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -3244,7 +3245,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -3252,7 +3253,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -3260,7 +3261,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3268,7 +3269,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -3279,14 +3280,14 @@ namespace Tic_Tac_Toe
 				{
 					if (eight != "X" && eight != "O")
 					{
-						botChoice = 8;
+						choice = 8;
 						isDefensive = true;
 						isMultiChoice = 1;
 						if (two == "O" && eight == "O")
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3294,7 +3295,7 @@ namespace Tic_Tac_Toe
 						{
 							if (eight != "O" && eight != "X")
 							{
-								botChoice = 8;
+								choice = 8;
 								isMultiChoice = 3;
 							}
 						}
@@ -3302,7 +3303,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -3310,7 +3311,7 @@ namespace Tic_Tac_Toe
 						{
 							if (six != "O" && six != "X")
 							{
-								botChoice = 6;
+								choice = 6;
 								isMultiChoice = 3;
 							}
 						}
@@ -3318,7 +3319,7 @@ namespace Tic_Tac_Toe
 						{
 							if (five != "O" && five != "X")
 							{
-								botChoice = 5;
+								choice = 5;
 								isMultiChoice = 3;
 							}
 						}
@@ -3326,7 +3327,7 @@ namespace Tic_Tac_Toe
 						{
 							if (four != "O" && four != "X")
 							{
-								botChoice = 4;
+								choice = 4;
 								isMultiChoice = 3;
 							}
 						}
@@ -3334,7 +3335,7 @@ namespace Tic_Tac_Toe
 						{
 							if (two != "O" && two != "X")
 							{
-								botChoice = 2;
+								choice = 2;
 								isMultiChoice = 3;
 							}
 						}
@@ -3342,7 +3343,7 @@ namespace Tic_Tac_Toe
 						{
 							if (one != "O" && one != "X")
 							{
-								botChoice = 1;
+								choice = 1;
 								isMultiChoice = 3;
 							}
 						}
@@ -3350,7 +3351,7 @@ namespace Tic_Tac_Toe
 						{
 							if (three != "O" && three != "X")
 							{
-								botChoice = 3;
+								choice = 3;
 								isMultiChoice = 3;
 							}
 						}
@@ -3360,13 +3361,13 @@ namespace Tic_Tac_Toe
 			}
 
 
-			if (counter == 1 || (isMultiChoice == 0 && counter==2) || (isMultiChoice == 0 && counter == 3))
+			if (counter == 1 || (isMultiChoice == 0 && counter == 2) || (isMultiChoice == 0 && counter == 3))
 			{
 				A:
 				Random r = new Random();
-				botChoice = r.Next(1, 9);
+				choice = r.Next(1, 9);
 				isDefensive = true;
-				switch (botChoice)
+				switch (choice)
 				{
 					case 1:
 						if (one == "X" || one == "O")
@@ -3375,7 +3376,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 1;
+							choice = 1;
 						}
 						break;
 					case 2:
@@ -3385,7 +3386,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 2;
+							choice = 2;
 						}
 						break;
 					case 3:
@@ -3395,7 +3396,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 3;
+							choice = 3;
 						}
 						break;
 					case 4:
@@ -3405,7 +3406,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 4;
+							choice = 4;
 						}
 						break;
 					case 5:
@@ -3415,7 +3416,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 5;
+							choice = 5;
 						}
 						break;
 					case 6:
@@ -3425,7 +3426,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 6;
+							choice = 6;
 						}
 						break;
 					case 7:
@@ -3435,7 +3436,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 7;
+							choice = 7;
 						}
 						break;
 					case 8:
@@ -3445,7 +3446,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 8;
+							choice = 8;
 						}
 						break;
 					case 9:
@@ -3455,7 +3456,7 @@ namespace Tic_Tac_Toe
 						}
 						else
 						{
-							botChoice = 9;
+							choice = 9;
 						}
 						break;
 
@@ -3468,7 +3469,7 @@ namespace Tic_Tac_Toe
 				{
 					if (three != "X" && three != "O")
 					{
-						botChoice = 3;
+						choice = 3;
 
 					}
 				}
@@ -3478,7 +3479,7 @@ namespace Tic_Tac_Toe
 				{
 					if (two != "X" && two != "O")
 					{
-						botChoice = 2;
+						choice = 2;
 
 					}
 				}
@@ -3489,7 +3490,7 @@ namespace Tic_Tac_Toe
 				{
 					if (seven != "X" && seven != "O")
 					{
-						botChoice = 7;
+						choice = 7;
 
 					}
 				}
@@ -3500,7 +3501,7 @@ namespace Tic_Tac_Toe
 				{
 					if (nine != "X" && nine != "O")
 					{
-						botChoice = 9;
+						choice = 9;
 
 					}
 				}
@@ -3509,7 +3510,7 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 
 					}
 
@@ -3520,7 +3521,7 @@ namespace Tic_Tac_Toe
 				{
 					if (one != "X" && one != "O")
 					{
-						botChoice = 1;
+						choice = 1;
 
 					}
 				}
@@ -3531,7 +3532,7 @@ namespace Tic_Tac_Toe
 				{
 					if (eight != "X" && eight != "O")
 					{
-						botChoice = 8;
+						choice = 8;
 
 					}
 				}
@@ -3541,7 +3542,7 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 
 					}
 				}
@@ -3553,7 +3554,7 @@ namespace Tic_Tac_Toe
 				{
 					if (nine != "X" && nine != "O")
 					{
-						botChoice = 9;
+						choice = 9;
 
 					}
 
@@ -3564,7 +3565,7 @@ namespace Tic_Tac_Toe
 				{
 					if (seven != "X" && seven != "O")
 					{
-						botChoice = 7;
+						choice = 7;
 
 					}
 				}
@@ -3574,7 +3575,7 @@ namespace Tic_Tac_Toe
 				{
 					if (six != "X" && six != "O")
 					{
-						botChoice = 6;
+						choice = 6;
 
 					}
 				}
@@ -3584,7 +3585,7 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 
 					}
 				}
@@ -3594,7 +3595,7 @@ namespace Tic_Tac_Toe
 				{
 					if (one != "X" && one != "O")
 					{
-						botChoice = 1;
+						choice = 1;
 
 					}
 				}
@@ -3603,7 +3604,7 @@ namespace Tic_Tac_Toe
 				{
 					if (six != "X" && six != "O")
 					{
-						botChoice = 6;
+						choice = 6;
 					}
 				}
 
@@ -3612,7 +3613,7 @@ namespace Tic_Tac_Toe
 				{
 					if (four != "X" && four != "O")
 					{
-						botChoice = 4;
+						choice = 4;
 
 					}
 				}
@@ -3625,7 +3626,7 @@ namespace Tic_Tac_Toe
 				{
 					if (three != "X" && three != "O")
 					{
-						botChoice = 3;
+						choice = 3;
 
 					}
 				}
@@ -3635,7 +3636,7 @@ namespace Tic_Tac_Toe
 				{
 					if (one != "X" && one != "O")
 					{
-						botChoice = 1;
+						choice = 1;
 
 					}
 				}
@@ -3645,7 +3646,7 @@ namespace Tic_Tac_Toe
 				{
 					if (two != "X" && two != "O")
 					{
-						botChoice = 2;
+						choice = 2;
 
 					}
 				}
@@ -3655,7 +3656,7 @@ namespace Tic_Tac_Toe
 				{
 					if (three != "X" && three != "O")
 					{
-						botChoice = 3;
+						choice = 3;
 
 					}
 
@@ -3666,7 +3667,7 @@ namespace Tic_Tac_Toe
 				{
 					if (nine != "X" && nine != "O")
 					{
-						botChoice = 9;
+						choice = 9;
 
 					}
 				}
@@ -3676,7 +3677,7 @@ namespace Tic_Tac_Toe
 				{
 					if (five != "X" && five != "O")
 					{
-						botChoice = 5;
+						choice = 5;
 
 					}
 
@@ -3687,7 +3688,7 @@ namespace Tic_Tac_Toe
 				{
 					if (seven != "X" && seven != "O")
 					{
-						botChoice = 7;
+						choice = 7;
 
 					}
 
@@ -3697,7 +3698,7 @@ namespace Tic_Tac_Toe
 				{
 					if (four != "X" && four != "O")
 					{
-						botChoice = 4;
+						choice = 4;
 					}
 				}
 
@@ -3705,13 +3706,14 @@ namespace Tic_Tac_Toe
 				{
 					if (eight != "X" && eight != "O")
 					{
-						botChoice = 8;
+						choice = 8;
 					}
 				}
 
 			}
-			return botChoice;
+			return choice;
 		}
+
 
 		//variables
 		static string one = "1";
@@ -3743,9 +3745,149 @@ namespace Tic_Tac_Toe
 		static bool XorO = true; // true = X`s turn; false = O`s turn;
 		static bool isMultiModeOn = false;
 		static bool isFirstTime = true;
+		static int winVariant;
 
 		static SpeechSynthesizer synth = new SpeechSynthesizer();
 		static SoundPlayer MusicPlayer = new SoundPlayer((Properties.Resources.TheFatRat___Epic));
+
+		static void LightUp()
+		{/*
+			
+
+			if (isMultiModeOn) // vs 2nd player
+			{
+				var colorX = ConsoleColor.Cyan;
+				var colorO = ConsoleColor.Magenta;
+
+				switch (winVariant)
+				{
+					case 1: // 1, 2 ,3
+
+						if (XorO) // x
+						{
+
+							Console.ForegroundColor = ConsoleColor.Yellow;
+							Console.WriteLine("");
+							Console.WriteLine("");
+							Console.WriteLine("");
+							Console.WriteLine("");
+							Console.WriteLine("                    ┌─────┐");
+
+							//Console.WriteLine("                    │" + one + "│" + two + "│" + three + "│");
+							Console.Write("                    │");
+							Console.ForegroundColor = colorX;
+							Console.Write(one);
+							Console.ForegroundColor = ConsoleColor.Yellow;
+							Console.Write("│");
+							Console.ForegroundColor = colorX;
+							Console.Write(two);
+							Console.ForegroundColor = ConsoleColor.Yellow;
+							Console.Write("│");
+							Console.ForegroundColor = colorX;
+							Console.Write(three);
+							Console.ForegroundColor = ConsoleColor.Yellow;
+							Console.WriteLine("│");
+
+
+
+							Console.WriteLine("                    │" + four + "│" + five + "│" + six + "│");
+							Console.WriteLine("                    │" + seven + "│" + eight + "│" + nine + "│");
+							Console.WriteLine("                    └─────┘");
+							Console.WriteLine("");
+							Console.ForegroundColor = ConsoleColor.Magenta;
+						}
+						else // o
+						{
+							Console.ForegroundColor = ConsoleColor.White;
+							Console.WriteLine("Games Played:" + totalGames);
+							Console.WriteLine("        " + "Wins:" + wins);
+							Console.ForegroundColor = ConsoleColor.Yellow;
+							Console.WriteLine("                    ┌─────┐");
+							Console.WriteLine("                    │" + one + "│" + two + "│" + three + "│");
+							Console.WriteLine("                    │" + four + "│" + five + "│" + six + "│");
+							Console.WriteLine("                    │" + seven + "│" + eight + "│" + nine + "│");
+							Console.WriteLine("                    └─────┘");
+							Console.WriteLine("");
+							Console.ForegroundColor = ConsoleColor.Magenta;
+							Console.WriteLine("To play type the number you want to change to X and hit enter.");
+						}
+
+						break;
+
+					case 2: // 4, 5, 6
+
+						break;
+
+					case 3: // 7, 8, 9
+
+						break;
+
+					case 4: // 1, 4, 7
+
+						break;
+
+					case 5: // 2, 5, 8
+
+						break;
+
+					case 6: // 3, 6, 9
+
+						break;
+
+					case 7: // 1, 5, 9
+
+						break;
+
+					case 8: // 7, 5, 3
+
+						break;
+
+				}
+			}
+			else // vs bot
+			{
+				var colorX = ConsoleColor.Green;
+				var colorO = ConsoleColor.Red;
+
+				switch (winVariant)
+				{
+					case 1: // 1, 2 ,3
+
+
+						break; 
+
+					case 2: // 4, 5, 6
+
+						break;
+
+					case 3: // 7, 8, 9
+
+						break;
+
+					case 4: // 1, 4, 7
+
+						break;
+
+					case 5: // 2, 5, 8
+
+						break;
+
+					case 6: // 3, 6, 9
+
+						break;
+
+					case 7: //1, 5, 9
+
+						break;
+
+					case 8: // 7, 5, 3
+
+						break;
+				}
+
+			}*/
+			
+		} 
 
 		static void PlayMulti()
 		{
@@ -3938,13 +4080,12 @@ namespace Tic_Tac_Toe
 				{
 					Console.Clear();
 					DrawMultiUI();
-					Thread.Sleep(2000);
+					//Thread.Sleep(2000);
 					if (XorO == false)
 					{
 						//Player 2 {O} wins
 						Console.Clear();
 						DrawMultiUI();
-						Thread.Sleep(2000);
 						Console.Clear();
 						Console.ForegroundColor = ConsoleColor.Red;
 						Console.WriteLine("Player 2 [O] wins! Press any key to play again!");
@@ -3958,6 +4099,9 @@ namespace Tic_Tac_Toe
 					else
 					{
 						//Player 1 {X} wins
+						Console.Clear();
+						//LightUp();
+						Thread.Sleep(2000);
 						Console.Clear();
 						Console.ForegroundColor = ConsoleColor.Red;
 						Console.WriteLine("Player 1 [X] wins! Press any key to play again!");
@@ -4173,6 +4317,9 @@ namespace Tic_Tac_Toe
 				{
 					//Player 1 {X} wins
 					Console.Clear();
+					//LightUp();
+					Thread.Sleep(2000);
+					Console.Clear();
 					Console.ForegroundColor = ConsoleColor.Red;
 					Console.WriteLine("Player 1 [X] wins! Press any key to play again!");
 					synth.Speak("Player 1 wins! Press any key to play again");
@@ -4223,6 +4370,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 1;
 				return;
 			}
 			if (four == "X" && five == "X" && six == "X")
@@ -4231,6 +4379,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 2;
 				return;
 			}
 			if (seven == "X" && eight == "X" && nine == "X")
@@ -4238,6 +4387,7 @@ namespace Tic_Tac_Toe
 				var color = Console.ForegroundColor;
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
+				winVariant = 3;
 				XorO = true;
 				return;
 			}
@@ -4247,6 +4397,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 4;
 				return;
 			}
 			if (two == "X" && five == "X" && eight == "X")
@@ -4255,6 +4406,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 5;
 				return;
 			}
 			if (three == "X" && six == "X" && nine == "X")
@@ -4263,6 +4415,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 6;
 				return;
 			}
 			if (one == "X" && five == "X" && nine == "X")
@@ -4271,6 +4424,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 7;
 				return;
 			}
 			if (seven == "X" && five == "X" && three == "X")
@@ -4279,6 +4433,7 @@ namespace Tic_Tac_Toe
 				if (!isMultiModeOn) gameResult = true;
 				else multiGameResult = true;
 				XorO = true;
+				winVariant = 8;
 				return;
 			}
 
@@ -4295,6 +4450,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 1;
 				return;
 			}
 			if (four == "O" && five == "O" && six == "O")
@@ -4304,6 +4460,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 2;
 				return;
 			}
 			if (seven == "O" && eight == "O" && nine == "O")
@@ -4313,6 +4470,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				XorO = false;
 				UserOrPc = true;
+				winVariant = 3;
 				return;
 			}
 			if (one == "O" && four == "O" && seven == "O")
@@ -4322,6 +4480,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 4;
 				return;
 			}
 			if (two == "O" && five == "O" && eight == "O")
@@ -4331,6 +4490,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 5;
 				return;
 			}
 			if (three == "O" && six == "O" && nine == "O")
@@ -4340,6 +4500,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 6;
 				return;
 			}
 			if (one == "O" && five == "O" && nine == "O")
@@ -4349,6 +4510,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 7;
 				return;
 			}
 			if (seven == "O" && five == "O" && three == "O")
@@ -4358,6 +4520,7 @@ namespace Tic_Tac_Toe
 				else multiGameResult = true;
 				UserOrPc = true;
 				XorO = false;
+				winVariant = 8;
 				return;
 			}
 
@@ -4644,7 +4807,7 @@ namespace Tic_Tac_Toe
 
 					}
 					counter++;
-					botChoice = GetBotChoice();
+					botChoice = GetBestBotChoice();
 
 					switch (botChoice)
 					{
