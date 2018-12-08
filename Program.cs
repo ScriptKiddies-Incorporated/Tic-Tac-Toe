@@ -4538,7 +4538,6 @@ namespace Tic_Tac_Toe
                 userChoice = 0;
                 counter = 0;
                 isMultiChoice = 0;
-                isDefensive = false;
                 gameResult = false;
                 UserOrPc = false;
 
