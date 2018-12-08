@@ -12,61 +12,61 @@ namespace Tic_Tac_Toe
 {
     class Program
     {
-        static int GetBestBotChoice()
+       static int GetBestBotChoice()
         {
             int choice = 0;
-            if (one == "X" && seven == "X" && nine == "X")
+            if (one == X && seven == X && nine == X)
             {
-                if (four != "X" && four != "O")
+                if (four != X && four != O)
                 {
                     choice = 4;
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -76,59 +76,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && three == "X" && nine == "X")
+            if (one == X && three == X && nine == X)
             {
-                if (two != "X" && two != "O")
+                if (two != X && two != O)
                 {
                     choice = 2;
 
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -138,59 +138,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && seven == "X" && three == "X")
+            if (one == X && seven == X && three == X)
             {
-                if (four != "X" && four != "O")
+                if (four != X && four != O)
                 {
                     choice = 4;
 
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -200,59 +200,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (three == "X" && seven == "X" && nine == "X")
+            if (three == X && seven == X && nine == X)
             {
-                if (six != "X" && six != "O")
+                if (six != X && six != O)
                 {
                     choice = 6;
 
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -262,35 +262,35 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && seven == "X" && five == "X")
+            if (one == X && seven == X && five == X)
             {
-                if (nine != "X" && nine != "O")
+                if (nine != X && nine != O)
                 {
                     choice = 9;
 
                     isMultiChoice = 2;
-                    if (three == "O" && six == "O")
+                    if (three == O && six == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && nine == "O")
+                    if (three == O && nine == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && six == "O")
+                    if (nine == O && six == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -300,35 +300,35 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (three == "X" && five == "X" && nine == "X")
+            if (three == X && five == X && nine == X)
             {
-                if (seven != "X" && seven != "O")
+                if (seven != X && seven != O)
                 {
                     choice = 7;
 
                     isMultiChoice = 2;
-                    if (one == "O" && four == "O")
+                    if (one == O && four == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && seven == "O")
+                    if (four == O && seven == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && seven == "O")
+                    if (one == O && seven == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -338,35 +338,35 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && five == "X" && three == "X")
+            if (one == X && five == X && three == X)
             {
-                if (nine != "X" && nine != "O")
+                if (nine != X && nine != O)
                 {
                     choice = 9;
 
                     isMultiChoice = 2;
-                    if (seven == "O" && eight == "O")
+                    if (seven == O && eight == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && eight == "O")
+                    if (nine == O && eight == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && seven == "O")
+                    if (nine == O && seven == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -376,35 +376,35 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (five == "X" && seven == "X" && nine == "X")
+            if (five == X && seven == X && nine == X)
             {
-                if (three != "X" && three != "O")
+                if (three != X && three != O)
                 {
                     choice = 3;
 
                     isMultiChoice = 2;
-                    if (three == "O" && two == "O")
+                    if (three == O && two == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && one == "O")
+                    if (three == O && one == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && one == "O")
+                    if (two == O && one == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -415,83 +415,83 @@ namespace Tic_Tac_Toe
             }
 
 
-            if (three == "X" && two == "X" && six == "X")
+            if (three == X && two == X && six == X)
             {
-                if (one != "X" && one != "O")
+                if (one != X && one != O)
                 {
                     choice = 1;
 
                     isMultiChoice = 2;
-                    if (seven == "O" && eight == "O")
+                    if (seven == O && eight == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && eight == "O")
+                    if (nine == O && eight == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && seven == "O")
+                    if (nine == O && seven == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && four == "O")
+                    if (one == O && four == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && seven == "O")
+                    if (four == O && seven == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && seven == "O")
+                    if (one == O && seven == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && five == "O")
+                    if (one == O && five == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && nine == "O")
+                    if (five == O && nine == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && nine == "O")
+                    if (one == O && nine == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -501,83 +501,83 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (six == "X" && eight == "X" && nine == "X")
+            if (six == X && eight == X && nine == X)
             {
-                if (three != "X" && three != "O")
+                if (three != X && three != O)
                 {
                     choice = 3;
 
                     isMultiChoice = 2;
-                    if (one == "O" && four == "O")
+                    if (one == O && four == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && seven == "O")
+                    if (four == O && seven == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && seven == "O")
+                    if (one == O && seven == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && two == "O")
+                    if (three == O && two == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && one == "O")
+                    if (three == O && one == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && one == "O")
+                    if (two == O && one == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && seven == "O")
+                    if (three == O && seven == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && five == "O")
+                    if (three == O && five == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (seven == "O" && five == "O")
+                    if (seven == O && five == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
 
@@ -588,83 +588,83 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && two == "X" && four == "X")
+            if (one == X && two == X && four == X)
             {
-                if (three != "X" && three != "O")
+                if (three != X && three != O)
                 {
                     choice = 3;
 
                     isMultiChoice = 2;
-                    if (three == "O" && seven == "O")
+                    if (three == O && seven == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && five == "O")
+                    if (three == O && five == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (seven == "O" && five == "O")
+                    if (seven == O && five == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (seven == "O" && eight == "O")
+                    if (seven == O && eight == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && eight == "O")
+                    if (nine == O && eight == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && seven == "O")
+                    if (nine == O && seven == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && six == "O")
+                    if (three == O && six == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && nine == "O")
+                    if (three == O && nine == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && six == "O")
+                    if (nine == O && six == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -674,84 +674,84 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (four == "X" && seven == "X" && eight == "X")
+            if (four == X && seven == X && eight == X)
             {
-                if (one != "X" && one != "O")
+                if (one != X && one != O)
                 {
                     choice = 1;
 
                     isMultiChoice = 2;
-                    if (three == "O" && six == "O")
+                    if (three == O && six == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && nine == "O")
+                    if (three == O && nine == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && six == "O")
+                    if (nine == O && six == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && five == "O")
+                    if (one == O && five == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && nine == "O")
+                    if (one == O && nine == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && nine == "O")
+                    if (five == O && nine == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
 
-                    if (three == "O" && two == "O")
+                    if (three == O && two == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && one == "O")
+                    if (three == O && one == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && one == "O")
+                    if (two == O && one == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -761,59 +761,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (three == "X" && two == "X" && nine == "X")
+            if (three == X && two == X && nine == X)
             {
-                if (six != "X" && six != "O")
+                if (six != X && six != O)
                 {
                     choice = 6;
 
                     isMultiChoice = 2;
-                    if (one == "O" && four == "O")
+                    if (one == O && four == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && seven == "O")
+                    if (four == O && seven == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && seven == "O")
+                    if (one == O && seven == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -824,59 +824,59 @@ namespace Tic_Tac_Toe
             }
 
 
-            if (one == "X" && three == "X" && six == "X")
+            if (one == X && three == X && six == X)
             {
-                if (nine != "X" && nine != "O")
+                if (nine != X && nine != O)
                 {
                     choice = 9;
 
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (seven == "O" && eight == "O")
+                    if (seven == O && eight == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && eight == "O")
+                    if (nine == O && eight == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && seven == "O")
+                    if (nine == O && seven == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -886,59 +886,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (six == "X" && seven == "X" && nine == "X")
+            if (six == X && seven == X && nine == X)
             {
-                if (three != "X" && three != "O")
+                if (three != X && three != O)
                 {
                     choice = 3;
 
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && two == "O")
+                    if (three == O && two == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && one == "O")
+                    if (three == O && one == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && one == "O")
+                    if (two == O && one == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -948,59 +948,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (three == "X" && eight == "X" && nine == "X")
+            if (three == X && eight == X && nine == X)
             {
-                if (seven != "X" && seven != "O")
+                if (seven != X && seven != O)
                 {
                     choice = 7;
 
                     isMultiChoice = 2;
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && four == "O")
+                    if (one == O && four == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && seven == "O")
+                    if (four == O && seven == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (one == "O" && seven == "O")
+                    if (one == O && seven == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -1010,59 +1010,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && seven == "X" && eight == "X")
+            if (one == X && seven == X && eight == X)
             {
-                if (four != "X" && four != "O")
+                if (four != X && four != O)
                 {
                     choice = 4;
 
                     isMultiChoice = 2;
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && six == "O")
+                    if (three == O && six == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && nine == "O")
+                    if (three == O && nine == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && six == "O")
+                    if (nine == O && six == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -1072,59 +1072,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (four == "X" && seven == "X" && nine == "X")
+            if (four == X && seven == X && nine == X)
             {
-                if (eight != "X" && eight != "O")
+                if (eight != X && eight != O)
                 {
                     choice = 8;
 
                     isMultiChoice = 2;
-                    if (three == "O" && two == "O")
+                    if (three == O && two == O)
                     {
-                        if (one != "O" && one != "X")
+                        if (one != O && one != X)
                         {
                             choice = 1;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && one == "O")
+                    if (three == O && one == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && one == "O")
+                    if (two == O && one == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -1134,59 +1134,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && three == "X" && four == "X")
+            if (one == X && three == X && four == X)
             {
-                if (seven != "X" && seven != "O")
+                if (seven != X && seven != O)
                 {
                     choice = 7;
 
                     isMultiChoice = 2;
-                    if (two == "O" && eight == "O")
+                    if (two == O && eight == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (two == "O" && five == "O")
+                    if (two == O && five == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && eight == "O")
+                    if (five == O && eight == O)
                     {
-                        if (two != "O" && two != "X")
+                        if (two != O && two != X)
                         {
                             choice = 2;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (seven == "O" && eight == "O")
+                    if (seven == O && eight == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && eight == "O")
+                    if (nine == O && eight == O)
                     {
-                        if (seven != "O" && seven != "X")
+                        if (seven != O && seven != X)
                         {
                             choice = 7;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && seven == "O")
+                    if (nine == O && seven == O)
                     {
-                        if (eight != "O" && eight != "X")
+                        if (eight != O && eight != X)
                         {
                             choice = 8;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -1196,59 +1196,59 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            if (one == "X" && seven == "X" && two == "X")
+            if (one == X && seven == X && two == X)
             {
-                if (three != "X" && three != "O")
+                if (three != X && three != O)
                 {
                     choice = 3;
 
                     isMultiChoice = 2;
-                    if (four == "O" && five == "O")
+                    if (four == O && five == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (four == "O" && six == "O")
+                    if (four == O && six == O)
                     {
-                        if (five != "O" && five != "X")
+                        if (five != O && five != X)
                         {
                             choice = 5;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (five == "O" && six == "O")
+                    if (five == O && six == O)
                     {
-                        if (four != "O" && four != "X")
+                        if (four != O && four != X)
                         {
                             choice = 4;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && six == "O")
+                    if (three == O && six == O)
                     {
-                        if (nine != "O" && nine != "X")
+                        if (nine != O && nine != X)
                         {
                             choice = 9;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (three == "O" && nine == "O")
+                    if (three == O && nine == O)
                     {
-                        if (six != "O" && six != "X")
+                        if (six != O && six != X)
                         {
                             choice = 6;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
-                    if (nine == "O" && six == "O")
+                    if (nine == O && six == O)
                     {
-                        if (three != "O" && three != "X")
+                        if (three != O && three != X)
                         {
                             choice = 3;
-                            isMultiChoice = 3;
+                            isMultiChoice = 2;
                         }
                     }
                 }
@@ -1261,104 +1261,104 @@ namespace Tic_Tac_Toe
 
             if (isMultiChoice != 2)
             {
-                if (one == "X" && two == "X")
+                if (one == X && two == X)
                 {
-                    if (three != "X" && three != "O")
+                    if (three != X && three != O)
                     {
                         choice = 3;
 
                         isMultiChoice = 1;
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
@@ -1374,80 +1374,80 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (one == "X" && three == "X")
+                if (one == X && three == X)
                 {
-                    if (two != "X" && two != "O")
+                    if (two != X && two != O)
                     {
                         choice = 2;
 
                         isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
@@ -1463,104 +1463,104 @@ namespace Tic_Tac_Toe
 
 
 
-                if (one == "X" && four == "X")
+                if (one == X && four == X)
                 {
-                    if (seven != "X" && seven != "O")
+                    if (seven != X && seven != O)
                     {
                         choice = 7;
 
                         isMultiChoice = 1;
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
@@ -1576,56 +1576,56 @@ namespace Tic_Tac_Toe
 
 
 
-                if (one == "X" && five == "X")
+                if (one == X && five == X)
                 {
-                    if (nine != "X" && nine != "O")
+                    if (nine != X && nine != O)
                     {
                         choice = 9;
 
                         isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -1639,80 +1639,80 @@ namespace Tic_Tac_Toe
                     }
                 }
 
-                if (one == "X" && nine == "X")
+                if (one == X && nine == X)
                 {
-                    if (five != "X" && five != "O")
+                    if (five != X && five != O)
                     {
                         choice = 5;
 
                         isMultiChoice = 1;
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -1728,104 +1728,104 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (two == "X" && three == "X")
+                if (two == X && three == X)
                 {
-                    if (one != "X" && one != "O")
+                    if (one != X && one != O)
                     {
                         choice = 1;
 
                         isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -1840,80 +1840,80 @@ namespace Tic_Tac_Toe
 
 
 
-                if (two == "X" && five == "X")
+                if (two == X && five == X)
                 {
-                    if (eight != "X" && eight != "O")
+                    if (eight != X && eight != O)
                     {
                         choice = 8;
 
                         isMultiChoice = 1;
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -1927,128 +1927,128 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (two == "X" && eight == "X")
+                if (two == X && eight == X)
                 {
-                    if (five != "X" && five != "O")
+                    if (five != X && five != O)
                     {
                         choice = 5;
 
                         isMultiChoice = 1;
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -2065,104 +2065,104 @@ namespace Tic_Tac_Toe
 
 
 
-                if (three == "X" && six == "X")
+                if (three == X && six == X)
                 {
-                    if (nine != "X" && nine != "O")
+                    if (nine != X && nine != O)
                     {
                         choice = 9;
 
                         isMultiChoice = 1;
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
@@ -2178,56 +2178,56 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (three == "X" && five == "X")
+                if (three == X && five == X)
                 {
-                    if (seven != "X" && seven != "O")
+                    if (seven != X && seven != O)
                     {
                         choice = 7;
 
                         isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
@@ -2241,80 +2241,80 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (four == "X" && five == "X")
+                if (four == X && five == X)
                 {
-                    if (six != "X" && six != "O")
+                    if (six != X && six != O)
                     {
                         choice = 6;
 
                         isMultiChoice = 1;
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -2328,128 +2328,128 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (four == "X" && six == "X")
+                if (four == X && six == X)
                 {
-                    if (five != "X" && five != "O")
+                    if (five != X && five != O)
                     {
                         choice = 5;
 
                         isMultiChoice = 1;
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -2463,80 +2463,80 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (four == "X" && seven == "X")
+                if (four == X && seven == X)
                 {
-                    if (one != "X" && one != "O")
+                    if (one != X && one != O)
                     {
                         choice = 1;
 
                         isMultiChoice = 1;
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
@@ -2549,80 +2549,80 @@ namespace Tic_Tac_Toe
                     }
                 }
 
-                if (three == "X" && nine == "X")
+                if (three == X && nine == X)
                 {
-                    if (six != "X" && six != "O")
+                    if (six != X && six != O)
                     {
                         choice = 6;
 
                         isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
@@ -2636,80 +2636,80 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (five == "X" && six == "X")
+                if (five == X && six == X)
                 {
-                    if (four != "X" && four != "O")
+                    if (four != X && four != O)
                     {
                         choice = 4;
 
                         isMultiChoice = 1;
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && eight == "O")
+                        if (seven == O && eight == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && eight == "O")
+                        if (nine == O && eight == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && nine == "O")
+                        if (seven == O && nine == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -2726,56 +2726,56 @@ namespace Tic_Tac_Toe
 
 
 
-                if (five == "X" && seven == "X")
+                if (five == X && seven == X)
                 {
-                    if (three != "X" && three != "O")
+                    if (three != X && three != O)
                     {
                         choice = 3;
 
                         isMultiChoice = 1;
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -2789,56 +2789,56 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (five == "X" && nine == "X")
+                if (five == X && nine == X)
                 {
-                    if (one != "X" && one != "O")
+                    if (one != X && one != O)
                     {
                         choice = 1;
 
                         isMultiChoice = 1;
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
@@ -2852,80 +2852,80 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (five == "X" && eight == "X")
+                if (five == X && eight == X)
                 {
-                    if (two != "X" && two != "O")
+                    if (two != X && two != O)
                     {
                         choice = 2;
 
                         isMultiChoice = 1;
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -2939,104 +2939,104 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (six == "X" && nine == "X")
+                if (six == X && nine == X)
                 {
-                    if (three != "X" && three != "O")
+                    if (three != X && three != O)
                     {
                         choice = 3;
 
                         isMultiChoice = 1;
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -3051,104 +3051,104 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (seven == "X" && eight == "X")
+                if (seven == X && eight == X)
                 {
-                    if (nine != "X" && nine != "O")
+                    if (nine != X && nine != O)
                     {
                         choice = 9;
 
                         isMultiChoice = 1;
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -3162,80 +3162,80 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (three == "X" && seven == "X")
+                if (three == X && seven == X)
                 {
-                    if (five != "X" && five != "O")
+                    if (five != X && five != O)
                     {
                         choice = 5;
 
                         isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && five == "O")
+                        if (one == O && five == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && nine == "O")
+                        if (five == O && nine == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && nine == "O")
+                        if (one == O && nine == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
@@ -3250,104 +3250,104 @@ namespace Tic_Tac_Toe
                 }
 
 
-                if (eight == "X" && nine == "X")
+                if (eight == X && nine == X)
                 {
-                    if (seven != "X" && seven != "O")
+                    if (seven != X && seven != O)
                     {
                         choice = 7;
 
                         isMultiChoice = 1;
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && one == "O")
+                        if (four == O && one == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && seven == "O")
+                        if (four == O && seven == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && seven == "O")
+                        if (one == O && seven == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && five == "O")
+                        if (three == O && five == O)
                         {
-                            if (seven != "O" && seven != "X")
+                            if (seven != O && seven != X)
                             {
                                 choice = 7;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (seven == "O" && five == "O")
+                        if (seven == O && five == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && seven == "O")
+                        if (three == O && seven == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
@@ -3361,80 +3361,80 @@ namespace Tic_Tac_Toe
 
                 }
 
-                if (one == "X" && seven == "X")
+                if (one == X && seven == X)
                 {
-                    if (four != "X" && four != "O")
+                    if (four != X && four != O)
                     {
                         choice = 4;
 
                         isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && six == "O")
+                        if (three == O && six == O)
                         {
-                            if (nine != "O" && nine != "X")
+                            if (nine != O && nine != X)
                             {
                                 choice = 9;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && nine == "O")
+                        if (three == O && nine == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (nine == "O" && six == "O")
+                        if (nine == O && six == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
@@ -3447,80 +3447,80 @@ namespace Tic_Tac_Toe
                     }
                 }
 
-                if (seven == "X" && nine == "X")
+                if (seven == X && nine == X)
                 {
-                    if (eight != "X" && eight != "O")
+                    if (eight != X && eight != O)
                     {
                         choice = 8;
 
                         isMultiChoice = 1;
-                        if (two == "O" && eight == "O")
+                        if (two == O && eight == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (two == "O" && five == "O")
+                        if (two == O && five == O)
                         {
-                            if (eight != "O" && eight != "X")
+                            if (eight != O && eight != X)
                             {
                                 choice = 8;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && eight == "O")
+                        if (five == O && eight == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && five == "O")
+                        if (four == O && five == O)
                         {
-                            if (six != "O" && six != "X")
+                            if (six != O && six != X)
                             {
                                 choice = 6;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (four == "O" && six == "O")
+                        if (four == O && six == O)
                         {
-                            if (five != "O" && five != "X")
+                            if (five != O && five != X)
                             {
                                 choice = 5;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (five == "O" && six == "O")
+                        if (five == O && six == O)
                         {
-                            if (four != "O" && four != "X")
+                            if (four != O && four != X)
                             {
                                 choice = 4;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && one == "O")
+                        if (three == O && one == O)
                         {
-                            if (two != "O" && two != "X")
+                            if (two != O && two != X)
                             {
                                 choice = 2;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (three == "O" && two == "O")
+                        if (three == O && two == O)
                         {
-                            if (one != "O" && one != "X")
+                            if (one != O && one != X)
                             {
                                 choice = 1;
                                 isMultiChoice = 3;
                             }
                         }
-                        if (one == "O" && two == "O")
+                        if (one == O && two == O)
                         {
-                            if (three != "O" && three != "X")
+                            if (three != O && three != X)
                             {
                                 choice = 3;
                                 isMultiChoice = 3;
@@ -3536,16 +3536,16 @@ namespace Tic_Tac_Toe
             }
 
 
-            if (counter == 1 || isMultiChoice == 0 || (isMultiChoice == 0 && counter == 2) || (isMultiChoice == 0 && counter == 3))
+            if (counter == 1  isMultiChoice == 0 )
             {
-            A:
+            A
                 Random r = new Random();
                 choice = r.Next(1, 9);
 
                 switch (choice)
                 {
-                    case 1:
-                        if (one == "X" || one == "O")
+                    case 1
+                        if (one == X  one == O)
                         {
                             goto A;
                         }
@@ -3554,8 +3554,8 @@ namespace Tic_Tac_Toe
                             choice = 1;
                         }
                         break;
-                    case 2:
-                        if (two == "X" || two == "O")
+                    case 2
+                        if (two == X  two == O)
                         {
                             goto A;
                         }
@@ -3564,8 +3564,8 @@ namespace Tic_Tac_Toe
                             choice = 2;
                         }
                         break;
-                    case 3:
-                        if (three == "X" || three == "O")
+                    case 3
+                        if (three == X  three == O)
                         {
                             goto A;
                         }
@@ -3574,8 +3574,8 @@ namespace Tic_Tac_Toe
                             choice = 3;
                         }
                         break;
-                    case 4:
-                        if (four == "X" || four == "O")
+                    case 4
+                        if (four == X  four == O)
                         {
                             goto A;
                         }
@@ -3584,8 +3584,8 @@ namespace Tic_Tac_Toe
                             choice = 4;
                         }
                         break;
-                    case 5:
-                        if (five == "X" || five == "O")
+                    case 5
+                        if (five == X  five == O)
                         {
                             goto A;
                         }
@@ -3594,8 +3594,8 @@ namespace Tic_Tac_Toe
                             choice = 5;
                         }
                         break;
-                    case 6:
-                        if (six == "X" || six == "O")
+                    case 6
+                        if (six == X  six == O)
                         {
                             goto A;
                         }
@@ -3604,8 +3604,8 @@ namespace Tic_Tac_Toe
                             choice = 6;
                         }
                         break;
-                    case 7:
-                        if (seven == "X" || seven == "O")
+                    case 7
+                        if (seven == X  seven == O)
                         {
                             goto A;
                         }
@@ -3614,8 +3614,8 @@ namespace Tic_Tac_Toe
                             choice = 7;
                         }
                         break;
-                    case 8:
-                        if (eight == "X" || eight == "O")
+                    case 8
+                        if (eight == X  eight == O)
                         {
                             goto A;
                         }
@@ -3624,8 +3624,8 @@ namespace Tic_Tac_Toe
                             choice = 8;
                         }
                         break;
-                    case 9:
-                        if (nine == "X" || nine == "O")
+                    case 9
+                        if (nine == X  nine == O)
                         {
                             goto A;
                         }
