@@ -3669,7 +3669,6 @@ namespace Tic_Tac_Toe
         static int multiCounter;
         static int vs;
         static int isMultiChoice;
-        static bool isDefensive = false;
         static bool XorO = true; // true = X`s turn; false = O`s turn;
         static bool isMultiModeOn = false;
         static bool isFirstTime = true;
