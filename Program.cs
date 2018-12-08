@@ -4149,7 +4149,7 @@ namespace Tic_Tac_Toe
 						Console.WriteLine("Wrong.You must enter a number between 1 and 9");
 						Thread.Sleep(4000);
 						Console.Clear();
-						goto MultiUser1sTurn;
+						goto MultiUser2sTurn;  
 
 					}
 					switch (multiUser2Choice)
@@ -4647,7 +4647,8 @@ namespace Tic_Tac_Toe
 					Console.WriteLine("That`s not a number!");
 					Thread.Sleep(2000);
 					vs = 0;
-					goto Main;
+					Console.Clear();
+					goto VSchoice;
 				}
 
 				Console.Clear();
