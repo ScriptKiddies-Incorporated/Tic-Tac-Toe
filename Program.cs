@@ -3636,7 +3636,8 @@ namespace Tic_Tac_Toe
                         break;
 
                 }
-	 if(counter == 1 && five != "X" )
+            }
+	if(counter == 1 && five != "X" )
             {
                 choice = 5;
             }
@@ -3665,8 +3666,6 @@ namespace Tic_Tac_Toe
                 {
                     goto B;
                 }
-            }
-
             }
 
             return choice;
