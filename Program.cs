@@ -3536,7 +3536,7 @@ namespace Tic_Tac_Toe
             }
 
 
-            if (counter == 1 || isMultiChoice == 0 )
+            if (counter != 1 && isMultiChoice == 0 )
             {
             A:
                 Random r = new Random();
@@ -3636,6 +3636,36 @@ namespace Tic_Tac_Toe
                         break;
 
                 }
+	 if(counter == 1 && five != "X" )
+            {
+                choice = 5;
+            }
+            if (counter == 1 && five == "X" )
+            {
+                B:
+                Random r1 = new Random();
+                choice = r1.Next(1, 9);
+                if(choice == 2)
+                {
+                    goto B;
+                }
+                if (choice == 4)
+                {
+                    goto B;
+                }
+                if (choice == 6)
+                {
+                    goto B;
+                }
+                if (choice == 8)
+                {
+                    goto B;
+                }
+                if (choice == 5)
+                {
+                    goto B;
+                }
+            }
 
             }
 
